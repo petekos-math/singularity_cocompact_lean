@@ -1,0 +1,69 @@
+theorem Singularity.cocompact_fuchsian_hittingMeasure_singular : ∀
+  (Γ : Subgroup (Matrix.ProjectiveSpecialLinearGroup (Fin 2) ℝ)) [DiscreteTopology ↥Γ]
+  [CompactSpace (Quotient (MulAction.orbitRel (↥Γ) UpperHalfPlane))] [inst : MeasurableSpace ↥Γ]
+  [MeasurableSingletonClass ↥Γ],
+  Singularity.ProjectiveNonelementary Γ →
+    ∀ (s : Finset ↥Γ) (μ : ↥Γ → ℝ) (hpos : ∀ g ∈ s, 0 < μ g) (hmass : ∑ g ∈ s, μ g = 1),
+      Submonoid.closure ↑s = ⊤ →
+        ∀ (z : UpperHalfPlane),
+          (Singularity.projectiveHittingMeasure Γ s z μ hpos hmass).MutuallySingular
+            (Singularity.compactPoissonMeasure z) :=
+fun Γ [DiscreteTopology ↥Γ] [CompactSpace (Quotient (MulAction.orbitRel (↥Γ) UpperHalfPlane))] [MeasurableSpace ↥Γ]
+    [MeasurableSingletonClass ↥Γ] hne s μ hpos hmass hgen z =>
+  Singularity.projective_cocompact_hittingMeasure_singular Γ s μ hpos hmass hgen
+    (Singularity.ProjectiveNonelementary.infinite_boundary_orbits Γ hne) z
+'Singularity.cocompact_fuchsian_hittingMeasure_singular' depends on axioms: [propext, Classical.choice, Quot.sound]
+theorem Singularity.cocompact_fuchsian_hittingMeasure_singular_lebesgue : ∀
+  (Γ : Subgroup (Matrix.ProjectiveSpecialLinearGroup (Fin 2) ℝ)) [DiscreteTopology ↥Γ]
+  [CompactSpace (Quotient (MulAction.orbitRel (↥Γ) UpperHalfPlane))] [inst : MeasurableSpace ↥Γ]
+  [MeasurableSingletonClass ↥Γ],
+  Singularity.ProjectiveNonelementary Γ →
+    ∀ (s : Finset ↥Γ) (μ : ↥Γ → ℝ) (hpos : ∀ g ∈ s, 0 < μ g) (hmass : ∑ g ∈ s, μ g = 1),
+      Submonoid.closure ↑s = ⊤ →
+        ∀ (z : UpperHalfPlane),
+          (Singularity.finiteBoundaryMeasure (Singularity.projectiveHittingMeasure Γ s z μ hpos hmass)).MutuallySingular
+            MeasureTheory.volume :=
+fun Γ [DiscreteTopology ↥Γ] [CompactSpace (Quotient (MulAction.orbitRel (↥Γ) UpperHalfPlane))] [MeasurableSpace ↥Γ]
+    [MeasurableSingletonClass ↥Γ] hne s μ hpos hmass hgen z =>
+  (Singularity.compact_hitting_singularity_iff (Singularity.projectiveHittingMeasure Γ s z μ hpos hmass) z).mp
+    (Singularity.cocompact_fuchsian_hittingMeasure_singular Γ hne s μ hpos hmass hgen z)
+'Singularity.cocompact_fuchsian_hittingMeasure_singular_lebesgue' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+theorem Singularity.cocompact_fuchsian_boundaryMap_tendsto : ∀
+  (Γ : Subgroup (Matrix.ProjectiveSpecialLinearGroup (Fin 2) ℝ)) [DiscreteTopology ↥Γ]
+  [CompactSpace (Quotient (MulAction.orbitRel (↥Γ) UpperHalfPlane))] [inst : MeasurableSpace ↥Γ]
+  [MeasurableSingletonClass ↥Γ],
+  Singularity.ProjectiveNonelementary Γ →
+    ∀ (s : Finset ↥Γ) (μ : ↥Γ → ℝ) (hpos : ∀ g ∈ s, 0 < μ g) (hmass : ∑ g ∈ s, μ g = 1),
+      Submonoid.closure ↑s = ⊤ →
+        ∀ (z : UpperHalfPlane),
+          ∀ᵐ (ω : ℕ → ↥s) ∂Singularity.infiniteWalkLaw s μ ⋯ hmass,
+            Filter.Tendsto (fun n => Singularity.hyperbolicCompactEmbedding (Singularity.walkPosition s 1 n ω • z))
+              Filter.atTop (nhds (Singularity.compactBoundaryEmbedding (Singularity.projectiveBoundaryMap Γ s z ω))) :=
+fun Γ [DiscreteTopology ↥Γ] [CompactSpace (Quotient (MulAction.orbitRel (↥Γ) UpperHalfPlane))] [MeasurableSpace ↥Γ]
+    [MeasurableSingletonClass ↥Γ] hne s μ hpos hmass hgen z =>
+  Singularity.projective_cocompact_boundaryMap_tendsto Γ s μ hpos hmass hgen
+    (Singularity.ProjectiveNonelementary.infinite_boundary_orbits Γ hne) z
+theorem Singularity.cocompact_fuchsian_hittingLaw_singular : ∀
+  (Γ : Subgroup (Matrix.ProjectiveSpecialLinearGroup (Fin 2) ℝ)) [DiscreteTopology ↥Γ]
+  [CompactSpace (Quotient (MulAction.orbitRel (↥Γ) UpperHalfPlane))] [inst : MeasurableSpace ↥Γ]
+  [MeasurableSingletonClass ↥Γ],
+  Singularity.ProjectiveNonelementary Γ →
+    ∀ (s : Finset ↥Γ) (μ : ↥Γ → ℝ) (hpos : ∀ g ∈ s, 0 < μ g) (hmass : ∑ g ∈ s, μ g = 1),
+      Submonoid.closure ↑s = ⊤ →
+        ∀ (z : UpperHalfPlane) (b : (ℕ → ↥s) → OnePoint ℝ),
+          (∀ᵐ (ω : ℕ → ↥s) ∂Singularity.infiniteWalkLaw s μ ⋯ hmass,
+              Filter.Tendsto (fun n => Singularity.hyperbolicCompactEmbedding (Singularity.walkPosition s 1 n ω • z))
+                Filter.atTop (nhds (Singularity.compactBoundaryEmbedding (b ω)))) →
+            (Singularity.walkBoundaryLaw s μ ⋯ hmass b).MutuallySingular (Singularity.compactPoissonMeasure z) :=
+fun Γ [DiscreteTopology ↥Γ] [CompactSpace (Quotient (MulAction.orbitRel (↥Γ) UpperHalfPlane))] [MeasurableSpace ↥Γ]
+    [MeasurableSingletonClass ↥Γ] hne s μ hpos hmass hgen z b hb =>
+  have he :=
+    MeasureTheory.Measure.map_congr
+      (Filter.mp_mem (Singularity.cocompact_fuchsian_boundaryMap_tendsto Γ hne s μ hpos hmass hgen z)
+        (Filter.mp_mem hb
+          (Filter.univ_mem'
+            (id fun ω h₁ h₂ => Singularity.compactBoundaryEmbedding_injective (tendsto_nhds_unique h₁ h₂)))));
+  Eq.mpr (id (congrArg (fun _a => _a.MutuallySingular (Singularity.compactPoissonMeasure z)) he))
+    (Singularity.cocompact_fuchsian_hittingMeasure_singular Γ hne s μ hpos hmass hgen z)

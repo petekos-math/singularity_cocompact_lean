@@ -1,0 +1,12 @@
+{
+  "challenge_module": "Challenge",
+  "solution_module": "Singularity",
+  "theorem_names": ["Singularity.cocompact_fuchsian_boundaryMap_tendsto", 
+  "Singularity.cocompact_fuchsian_hittingMeasure_singular",
+  "Singularity.cocompact_fuchsian_hittingMeasure_singular_lebesgue",
+  "Singularity.cocompact_fuchsian_hittingLaw_singular"],
+  "permitted_axioms": [
+    "propext", "Quot.sound", "Classical.choice"
+  ],
+  "enable_nanoda": false
+}

@@ -1,0 +1,14 @@
+Building Challenge
+⣻ [2268/2274] Running Mathlib.Algebra.Polynomial.Degree.TrailingDegree (+ 4 more⢿ [3405/3419] Running Mathlib.Tactic.CategoryTheory.Coherence.Datatypes (+ 4 mor⚠ [4251/4252] Replayed Challenge
+warning: Challenge.lean:29:8: declaration uses `sorry`
+warning: Challenge.lean:36:8: declaration uses `sorry`
+warning: Challenge.lean:42:8: declaration uses `sorry`
+warning: Challenge.lean:48:8: declaration uses `sorry`
+Build completed successfully (4252 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, Singularity.cocompact_fuchsian_boundaryMap_tendsto, Singularity.cocompact_fuchsian_hittingMeasure_singular, Singularity.cocompact_fuchsian_hittingMeasure_singular_lebesgue, Singularity.cocompact_fuchsian_hittingLaw_singular, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Challenge
+Building Singularity
+⣷ [3356/3358] Running Mathlib.Analysis.SpecialFunctions.Trigonometric.Complex (+⡿ [3679/3683] Running Mathlib.CategoryTheory.Limits.Shapes.Pullback.Cospan (+ 1 Build completed successfully (4253 jobs).
+Exporting #[Quot, Quot.mk, Quot.lift, Quot.ind, Singularity.cocompact_fuchsian_boundaryMap_tendsto, Singularity.cocompact_fuchsian_hittingMeasure_singular, Singularity.cocompact_fuchsian_hittingMeasure_singular_lebesgue, Singularity.cocompact_fuchsian_hittingLaw_singular, propext, Quot.sound, Classical.choice, Nat.add, Nat.sub, Nat.mul, Nat.pow, Nat.gcd, Nat.div, Nat.mod, Nat.beq, Nat.ble, Nat.land, Nat.lor, Nat.xor, Nat.shiftLeft, Nat.shiftRight, String.ofList, Char.ofNat, List, eagerReduce, Nat, String, String.mk, Char, optParam, autoParam, semiOutParam, outParam] from Singularity
+Running Lean default kernel on solution.
+Lean default kernel accepts the solution
+Your solution is okay!

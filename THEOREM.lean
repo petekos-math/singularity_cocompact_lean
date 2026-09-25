@@ -1,0 +1,9 @@
+import Singularity
+
+-- Display the fully elaborated statements and their transitive logical axioms.
+#print Singularity.cocompact_fuchsian_hittingMeasure_singular
+#print axioms Singularity.cocompact_fuchsian_hittingMeasure_singular
+#print Singularity.cocompact_fuchsian_hittingMeasure_singular_lebesgue
+#print axioms Singularity.cocompact_fuchsian_hittingMeasure_singular_lebesgue
+#print Singularity.cocompact_fuchsian_boundaryMap_tendsto
+#print Singularity.cocompact_fuchsian_hittingLaw_singular

@@ -1,0 +1,95 @@
+# Self-contained Lean proof: the cocompact case
+
+This is a standalone extraction of the cocompact Fuchsian singularity proof.
+It contains the entry theorem and its entire project-local dependency closure:
+**313 Lean modules, with 1,866 theorem/definition declarations audited**.
+The unfinished noncocompact development is not needed to build this project.
+
+## The mathematical statement
+
+Let Γ be a discrete nonelementary subgroup of PSL(2, ℝ) with compact
+hyperbolic orbit quotient. Let s be a finite subset of Γ, with strictly
+positive weights μ on s summing to one, and suppose s generates Γ as a
+semigroup. The hitting measure of the corresponding right random walk is
+mutually singular with visual measure on the ideal boundary. In the real
+boundary chart, it is mutually singular with Lebesgue measure.
+
+The law need not be symmetric. Nonelementarity means that Γ has no finite
+orbit in the hyperbolic plane together with its ideal boundary.
+
+Start with:
+
+- [The final theorem](Singularity/FuchsianCocompactSingularity.lean).
+- [The proof guide](PROOF_GUIDE.md).
+- [The statement inspection file](THEOREM.lean).
+- [The verification script](verify.py).
+
+The main declarations are:
+
+```lean
+Singularity.cocompact_fuchsian_hittingMeasure_singular
+Singularity.cocompact_fuchsian_hittingMeasure_singular_lebesgue
+```
+
+The same entry module proves almost-sure convergence of the original
+projective random walk to the named hitting map, and singularity for any
+other almost-sure version of that limit.
+
+## Build and audit
+
+Requirements: Lean installed through Elan, Python 3, and the pinned Mathlib
+dependencies. Run these commands from this folder:
+
+```sh
+lake exe cache get
+python3 verify.py
+```
+
+Elan reads `lean-toolchain`; Lake reads `lakefile.toml` and the committed
+`lake-manifest.json`. A first build on another machine needs network access
+to obtain the toolchain and dependencies.
+
+The toolchain is `leanprover/lean4:v4.34.0-rc2`. Mathlib is pinned to
+`3649549a1e4b19461e912299ca7127d8831b79fa`.
+
+The verifier:
+
+1. Checks that every local import is present, and every included local
+   module is reachable from the cocompact entry module.
+2. Builds the project with Lean.
+3. Checks declaration-name uniqueness and audit coverage.
+4. Asks Lean for the transitive axioms of every theorem and definition.
+5. Rejects any axiom other than `propext`, `Classical.choice`, and `Quot.sound`.
+6. Writes `VERIFICATION.txt` and the printed final statements in
+   `THEOREM_STATEMENTS.txt`.
+
+To inspect only the main statements after a build:
+
+```sh
+lake env lean THEOREM.lean
+```
+
+Moreover, we provide the Challenge.lean file and the comparator output which verifies our proofs as well.
+
+## What “self-contained” means here
+
+All project-specific Lean source dependencies are included as ordinary files.
+No source or compiled proof is imported from the larger, unfinished project.
+Lean and Mathlib remain the explicitly pinned external foundations; they are
+not vendored into this folder.
+
+On the original machine, `.lake/packages` reuses the installed external
+package caches. The local proof modules are built separately in this folder.
+These machine-specific caches are excluded from the accompanying ZIP. The
+source files and lockfiles in that ZIP suffice to fetch the same dependencies
+and rebuild elsewhere.
+
+`SOURCE_MANIFEST.json` records the included modules, direct imports, and
+SHA-256 hashes of the extracted Lean source. The files retain their original
+`Singularity` namespace so that the checked proofs need no renaming.
+
+## Scope
+
+This project proves the **cocompact** case. It does not claim the nonuniform
+lattice case or the unrestricted infinite-covolume case. No unresolved cusp
+compactness hypothesis is used in the final cocompact statement.

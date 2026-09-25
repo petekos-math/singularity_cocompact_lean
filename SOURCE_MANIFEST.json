@@ -1,0 +1,2923 @@
+{
+  "entry_module": "Singularity.FuchsianCocompactSingularity",
+  "module_count": 313,
+  "theorem_definition_count": 1866,
+  "modules": [
+    {
+      "module": "Singularity.AlmostInvariantL2",
+      "file": "Singularity/AlmostInvariantL2.lean",
+      "sha256": "295369827b174b36d3f86e0dae6306a1639dfe8a6a106732805f7e2a12604d36",
+      "imports": [
+        "Singularity.MarkovEnergy",
+        "Singularity.ReflectedSupport",
+        "Mathlib.Analysis.SpecificLimits.Basic"
+      ]
+    },
+    {
+      "module": "Singularity.AnalysisKernel",
+      "file": "Singularity/AnalysisKernel.lean",
+      "sha256": "43d5b2a1085298489eed5f59899bfab1f9ba6e69056cc283a982e0d0257cb7dd",
+      "imports": [
+        "Singularity.LatticeObstruction",
+        "Singularity.TranslatedAnalysis"
+      ]
+    },
+    {
+      "module": "Singularity.AnalysisOperator",
+      "file": "Singularity/AnalysisOperator.lean",
+      "sha256": "baf40548d3357681116dad819a9fa808978973c66d2cc6231c3f200b67cda8bb",
+      "imports": [
+        "Singularity.DominatedLimit",
+        "Singularity.WeightedCauchySchwarz"
+      ]
+    },
+    {
+      "module": "Singularity.AxisBallGeometry",
+      "file": "Singularity/AxisBallGeometry.lean",
+      "sha256": "6cc5595504ccbe1dd6dd24cac03b0f782b11e62bc93d33f98462c11d019efb04",
+      "imports": [
+        "Singularity.AxisBallSeparation"
+      ]
+    },
+    {
+      "module": "Singularity.AxisBallSeparation",
+      "file": "Singularity/AxisBallSeparation.lean",
+      "sha256": "550eece8f27aa426ad1d3d65ffd5e52fb6b11754e0464fd686a16c5f5869758c",
+      "imports": [
+        "Singularity.CayleyExcess",
+        "Singularity.DilationGeometry",
+        "Singularity.VisualPoissonRay"
+      ]
+    },
+    {
+      "module": "Singularity.AxisTriangleExcess",
+      "file": "Singularity/AxisTriangleExcess.lean",
+      "sha256": "647acb695a86056138eb3b65475cbdc75501085800642cd686d153bb0c0417b2",
+      "imports": [
+        "Singularity.HyperbolicAxisNormalization"
+      ]
+    },
+    {
+      "module": "Singularity.BandOrthogonality",
+      "file": "Singularity/BandOrthogonality.lean",
+      "sha256": "d2d4b13c91911089361159a1b816964f2cb7f3859cde9a8e504bba5a2f4e6725",
+      "imports": [
+        "Singularity.FiniteBand"
+      ]
+    },
+    {
+      "module": "Singularity.BoundaryActionMeasurable",
+      "file": "Singularity/BoundaryActionMeasurable.lean",
+      "sha256": "bcac16e69e2197f94d42a382d7ee164e80c0fad1e32b2ba14a6a4a365dabc253",
+      "imports": [
+        "Singularity.BoundaryPairTransitivity",
+        "Singularity.FiniteBoundaryChart",
+        "Mathlib.Topology.Algebra.Group.Matrix"
+      ]
+    },
+    {
+      "module": "Singularity.BoundaryCircle",
+      "file": "Singularity/BoundaryCircle.lean",
+      "sha256": "ff21d0b7e9ddbde46c4a9293554fcec6942a3b701ef0e14e4f53c432e668df87",
+      "imports": [
+        "Singularity.CayleyCompactification",
+        "Singularity.BoundaryPairs"
+      ]
+    },
+    {
+      "module": "Singularity.BoundaryConjugacy",
+      "file": "Singularity/BoundaryConjugacy.lean",
+      "sha256": "88264c54dabc8f93997f91d287d63162f9dd2fe197c452890b88c3002b3bc44a",
+      "imports": [
+        "Singularity.ConjugateSubgroup",
+        "Singularity.BoundaryMeasureClasses"
+      ]
+    },
+    {
+      "module": "Singularity.BoundaryCurrentBounds",
+      "file": "Singularity/BoundaryCurrentBounds.lean",
+      "sha256": "386066e26a99c64121b79b9097c9c9c08165020dad6fe48c46102acd232ac474",
+      "imports": [
+        "Singularity.BoundaryCurrentDensity",
+        "Singularity.CocompactVisualErgodicity"
+      ]
+    },
+    {
+      "module": "Singularity.BoundaryCurrentDensity",
+      "file": "Singularity/BoundaryCurrentDensity.lean",
+      "sha256": "e48379c95ab343fabbe30baf4ec5d24dcc30ace1fef8b37b88f58afad2b48b4f",
+      "imports": [
+        "Singularity.LiouvilleCurrent",
+        "Singularity.CompactProductDensity"
+      ]
+    },
+    {
+      "module": "Singularity.BoundaryDensityAnalysis",
+      "file": "Singularity/BoundaryDensityAnalysis.lean",
+      "sha256": "a7707748f007ca4734220af178afe4561723c1fc669d04c5c235a716c14fab9a",
+      "imports": [
+        "Singularity.LogBoundaryDensity"
+      ]
+    },
+    {
+      "module": "Singularity.BoundaryFrameSection",
+      "file": "Singularity/BoundaryFrameSection.lean",
+      "sha256": "08408b9ecb2d627ab1f2d2c2a0e5a64111ff4a95ddce5d0e82e67a421f8daa33",
+      "imports": [
+        "Singularity.BoundaryActionMeasurable",
+        "Singularity.LiouvilleHaarMeasureClass"
+      ]
+    },
+    {
+      "module": "Singularity.BoundaryMartinComparison",
+      "file": "Singularity/BoundaryMartinComparison.lean",
+      "sha256": "ec95ea9fade05f93de1be0210389b9f6e95fa35b6162f9f21969ca5289440566",
+      "imports": [
+        "Singularity.BoundaryRadialChart",
+        "Singularity.RadialGreenComparison",
+        "Singularity.RayMartinConvergence"
+      ]
+    },
+    {
+      "module": "Singularity.BoundaryMeasureAnalysis",
+      "file": "Singularity/BoundaryMeasureAnalysis.lean",
+      "sha256": "6522316762a9a3f2980474bdb21609e11245e8a8da0bfbf6e556a25ab50e7292",
+      "imports": [
+        "Singularity.BoundaryDensityAnalysis"
+      ]
+    },
+    {
+      "module": "Singularity.BoundaryMeasureClasses",
+      "file": "Singularity/BoundaryMeasureClasses.lean",
+      "sha256": "8a415dfaaa5777ca9e4f904addb8061db22aeb5c76481157a2ce7f295a22207c",
+      "imports": [
+        "Singularity.FiniteBoundaryChart",
+        "Mathlib.MeasureTheory.Measure.MutuallySingular"
+      ]
+    },
+    {
+      "module": "Singularity.BoundaryPairInvariance",
+      "file": "Singularity/BoundaryPairInvariance.lean",
+      "sha256": "1f604954c755815d9cb812184eef6d3c32a2d20d5eebadd67ec8515f23a78214",
+      "imports": [
+        "Singularity.BoundaryPairs",
+        "Singularity.StationaryCurrent"
+      ]
+    },
+    {
+      "module": "Singularity.BoundaryPairTransitivity",
+      "file": "Singularity/BoundaryPairTransitivity.lean",
+      "sha256": "39c1b665e3e1dc3c2caf780efd93f80f8711a9909ae3556534806d104fa4d11d",
+      "imports": [
+        "Singularity.BoundaryPairs",
+        "Singularity.ShearContraction"
+      ]
+    },
+    {
+      "module": "Singularity.BoundaryPairs",
+      "file": "Singularity/BoundaryPairs.lean",
+      "sha256": "bca75a08612e9086512075f6108c3b084308c85b8f95e044209e8ddc8f1573e6",
+      "imports": [
+        "Singularity.HittingMeasureAtoms",
+        "Singularity.CurrentComparison",
+        "Mathlib.MeasureTheory.Measure.Regular",
+        "Mathlib.Topology.Metrizable.Basic"
+      ]
+    },
+    {
+      "module": "Singularity.BoundaryRadialChart",
+      "file": "Singularity/BoundaryRadialChart.lean",
+      "sha256": "896f9595109d636586ef616034b825ce151922c90f64127561896e5ec57bc0e1",
+      "imports": [
+        "Singularity.RadialCoordinate",
+        "Mathlib.Analysis.Complex.UpperHalfPlane.ProperAction"
+      ]
+    },
+    {
+      "module": "Singularity.BoundaryRayApproach",
+      "file": "Singularity/BoundaryRayApproach.lean",
+      "sha256": "a4f08e0b3fed2ec939be3f671711d32e34c1675ee2e3d21db99741568be5af70",
+      "imports": [
+        "Singularity.VisualPoissonRay",
+        "Singularity.PeriodicStrip"
+      ]
+    },
+    {
+      "module": "Singularity.CayleyCompactification",
+      "file": "Singularity/CayleyCompactification.lean",
+      "sha256": "fa6cf42b71f573bfd767d5f1c769fdf057ef058ad6d0e48c428ee43bb7655e1b",
+      "imports": [
+        "Singularity.CayleyMetric"
+      ]
+    },
+    {
+      "module": "Singularity.CayleyExcess",
+      "file": "Singularity/CayleyExcess.lean",
+      "sha256": "e1433809c4c4982c26671125a958bbfa493ad3fd7791a1645bb9719199b78b4a",
+      "imports": [
+        "Singularity.GeometricDetour"
+      ]
+    },
+    {
+      "module": "Singularity.CayleyMetric",
+      "file": "Singularity/CayleyMetric.lean",
+      "sha256": "1a36edf46bf84f46878177731dc58a3db47f46846231b00211439c7e451bcb1c",
+      "imports": [
+        "Singularity.CompactBoundary",
+        "Mathlib.Analysis.Complex.UpperHalfPlane.Metric"
+      ]
+    },
+    {
+      "module": "Singularity.CayleyRealBoundary",
+      "file": "Singularity/CayleyRealBoundary.lean",
+      "sha256": "6556091b2f69bdcac6c6b5b8e4726f9842bc051b8288195fda6c15af1c28b2f3",
+      "imports": [
+        "Singularity.CayleyMetric"
+      ]
+    },
+    {
+      "module": "Singularity.CocompactAxisAncona",
+      "file": "Singularity/CocompactAxisAncona.lean",
+      "sha256": "ff72725f2ab526ee059789489cf821ac69b0063aa5257fe60bbaf2f2e88b4546",
+      "imports": [
+        "Singularity.ShrinkingAxisGeometry",
+        "Singularity.GeometricEntranceIteration",
+        "Singularity.CocompactGreenBall"
+      ]
+    },
+    {
+      "module": "Singularity.CocompactCurrentComparison",
+      "file": "Singularity/CocompactCurrentComparison.lean",
+      "sha256": "c21eaad2cfd12a38bb1b3529602e6425ead711577bb7de6d22970b7dd5dc34a5",
+      "imports": [
+        "Singularity.GeometricLiouvilleComparison",
+        "Singularity.CocompactLiouvilleErgodicity"
+      ]
+    },
+    {
+      "module": "Singularity.CocompactExcessAncona",
+      "file": "Singularity/CocompactExcessAncona.lean",
+      "sha256": "d45ee3f52d6c7236b0b359b3d091e7c957f34a8e3ad006a0f1c10f2ec490e299",
+      "imports": [
+        "Singularity.AxisTriangleExcess",
+        "Singularity.CocompactGeodesicAncona"
+      ]
+    },
+    {
+      "module": "Singularity.CocompactGeodesicAncona",
+      "file": "Singularity/CocompactGeodesicAncona.lean",
+      "sha256": "09bdba0572051f8cef07b5abe58ab94f32bfdad77b030cc3e94aa8fa767eb357",
+      "imports": [
+        "Singularity.CocompactAxisAncona",
+        "Singularity.HyperbolicAxisNormalization"
+      ]
+    },
+    {
+      "module": "Singularity.CocompactGlobalHarnack",
+      "file": "Singularity/CocompactGlobalHarnack.lean",
+      "sha256": "9e6726fec7e221813031ab439336362770749a20e8d689810959a054865d6645",
+      "imports": [
+        "Singularity.CocompactGreenLower"
+      ]
+    },
+    {
+      "module": "Singularity.CocompactGreenBall",
+      "file": "Singularity/CocompactGreenBall.lean",
+      "sha256": "38b5d979028ddbc9deda1dba464aacf8e8f1697b497d4770ae3c43ffaee95be6",
+      "imports": [
+        "Singularity.CocompactGlobalHarnack",
+        "Singularity.GreenProductBounds"
+      ]
+    },
+    {
+      "module": "Singularity.CocompactGreenComparison",
+      "file": "Singularity/CocompactGreenComparison.lean",
+      "sha256": "9a88a90f454f80cfa26c7c201ed5a626a57bb2d6752e46be92846e6d79f99964",
+      "imports": [
+        "Singularity.GreenVisualLower",
+        "Singularity.CocompactHittingBounds",
+        "Singularity.GreenPoissonBounds"
+      ]
+    },
+    {
+      "module": "Singularity.CocompactGreenLower",
+      "file": "Singularity/CocompactGreenLower.lean",
+      "sha256": "6812c90b3e97bdfdaa4680fa623ff3d597fcc50d32578639fb0741e519d67631",
+      "imports": [
+        "Singularity.HyperbolicHarnack",
+        "Singularity.CocompactOrbitChains"
+      ]
+    },
+    {
+      "module": "Singularity.CocompactGroupQuotient",
+      "file": "Singularity/CocompactGroupQuotient.lean",
+      "sha256": "40d387d14d08777b20a6c9ee1644ef0a357b7a6f187f6265ce217be931fa80c2",
+      "imports": [
+        "Singularity.CocompactRayApproximation",
+        "Singularity.SLTwoHaar",
+        "Singularity.CompactFundamentalDomain",
+        "Mathlib.Analysis.Complex.UpperHalfPlane.ProperAction"
+      ]
+    },
+    {
+      "module": "Singularity.CocompactHaarAverages",
+      "file": "Singularity/CocompactHaarAverages.lean",
+      "sha256": "3989d598172f284f4702e628ff2761cc21f5aa0efb93faa79f089f5e9d060584",
+      "imports": [
+        "Singularity.CocompactHaarMeasure",
+        "Singularity.ErgodicCesaro"
+      ]
+    },
+    {
+      "module": "Singularity.CocompactHaarMeasure",
+      "file": "Singularity/CocompactHaarMeasure.lean",
+      "sha256": "62a6f9ef8ffd125fec1e406c0e5f6abfd88e5f4f8de965e8cab7c5f29790b9f6",
+      "imports": [
+        "Singularity.CocompactGroupQuotient",
+        "Singularity.QuotientDilationErgodicity"
+      ]
+    },
+    {
+      "module": "Singularity.CocompactHittingBounds",
+      "file": "Singularity/CocompactHittingBounds.lean",
+      "sha256": "3a0b215c12640e7c81d109d760c92fffe074f260da49e0836bede431d876acd5",
+      "imports": [
+        "Singularity.BoundaryCurrentBounds",
+        "Singularity.CocompactCurrentComparison"
+      ]
+    },
+    {
+      "module": "Singularity.CocompactHittingSingularity",
+      "file": "Singularity/CocompactHittingSingularity.lean",
+      "sha256": "a6d2484a5bba6714cfbf06609f47ac04bad2bea04e5409cc784256f0946bb891",
+      "imports": [
+        "Singularity.OneSidedNaimRigidity",
+        "Singularity.CocompactTwoSidedSingularity"
+      ]
+    },
+    {
+      "module": "Singularity.CocompactHyperbolic",
+      "file": "Singularity/CocompactHyperbolic.lean",
+      "sha256": "dd56112f6c62338788eed20898939eb755dfb081c7cdfe1627abcd2f0009b0d1",
+      "imports": [
+        "Singularity.SmallRowHyperbolic",
+        "Singularity.CocompactSmallRow",
+        "Singularity.ConjugateCocompact"
+      ]
+    },
+    {
+      "module": "Singularity.CocompactLiouvilleErgodicity",
+      "file": "Singularity/CocompactLiouvilleErgodicity.lean",
+      "sha256": "bdd717f5cbe85835c7ad99d329745468e0af64a5f0a7ae118571e93f25d6c5aa",
+      "imports": [
+        "Singularity.QuotientFlowDuality",
+        "Singularity.CocompactHaarMeasure",
+        "Singularity.LiouvilleHaarMeasureClass"
+      ]
+    },
+    {
+      "module": "Singularity.CocompactNonamenable",
+      "file": "Singularity/CocompactNonamenable.lean",
+      "sha256": "427c1e24bebca688cca2d2059990570ef2d1d9edd642a1cd6890da00d7112c4e",
+      "imports": [
+        "Singularity.CocompactHyperbolic",
+        "Singularity.TraceNonamenable"
+      ]
+    },
+    {
+      "module": "Singularity.CocompactOrbitChains",
+      "file": "Singularity/CocompactOrbitChains.lean",
+      "sha256": "9e6787cc22fc74653e400d8b7f7b63b27341bb3e082b94a497f5fc43a71387db",
+      "imports": [
+        "Singularity.HyperbolicChains",
+        "Singularity.CocompactRayApproximation"
+      ]
+    },
+    {
+      "module": "Singularity.CocompactRayApproximation",
+      "file": "Singularity/CocompactRayApproximation.lean",
+      "sha256": "146964e9530337fe723242365192e4c803c000c3104429cf60cbdc97fce49538",
+      "imports": [
+        "Singularity.BoundaryRayApproach",
+        "Mathlib.Analysis.Complex.UpperHalfPlane.ProperAction"
+      ]
+    },
+    {
+      "module": "Singularity.CocompactRelativeDetour",
+      "file": "Singularity/CocompactRelativeDetour.lean",
+      "sha256": "dbfba78d749d359512dc956f48a7af81c4f76c22ac2f6274e5181df106089312",
+      "imports": [
+        "Singularity.CocompactGreenLower",
+        "Singularity.HyperbolicGreenDetour"
+      ]
+    },
+    {
+      "module": "Singularity.CocompactSmallRow",
+      "file": "Singularity/CocompactSmallRow.lean",
+      "sha256": "942166c7756eaa55b15ee7869e52bc3282d91b9ff7931415947b556beeaf298c",
+      "imports": [
+        "Singularity.CocompactRayApproximation",
+        "Mathlib.Analysis.SpecificLimits.Basic"
+      ]
+    },
+    {
+      "module": "Singularity.CocompactStableAverages",
+      "file": "Singularity/CocompactStableAverages.lean",
+      "sha256": "7124771890db906812cb451eece630792e947e556269a2e9d7e0d36128eafc2f",
+      "imports": [
+        "Singularity.CocompactHaarAverages",
+        "Singularity.CompactActionContraction",
+        "Mathlib.MeasureTheory.Integral.BoundedContinuousFunction"
+      ]
+    },
+    {
+      "module": "Singularity.CocompactTwoSidedSingularity",
+      "file": "Singularity/CocompactTwoSidedSingularity.lean",
+      "sha256": "41bc88585186341aaf7e06e5ddeac37454cbb63d641e6e84727e9ac7a67e3ec5",
+      "imports": [
+        "Singularity.NormalizedTwoSidedSingularity",
+        "Singularity.ReflectedHittingTransport",
+        "Singularity.NormalizedHittingLaw",
+        "Singularity.ConjugateCocompact",
+        "Singularity.CocompactNonamenable"
+      ]
+    },
+    {
+      "module": "Singularity.CocompactVisualErgodicity",
+      "file": "Singularity/CocompactVisualErgodicity.lean",
+      "sha256": "d385039936bb7b47cdf53987a6efb9411ce31ca06268f579cd05e8e55fdda951",
+      "imports": [
+        "Singularity.CocompactLiouvilleErgodicity",
+        "Singularity.GeometricHittingErgodicity",
+        "Singularity.ErgodicMeasureFactor"
+      ]
+    },
+    {
+      "module": "Singularity.CompactActionContraction",
+      "file": "Singularity/CompactActionContraction.lean",
+      "sha256": "e3beab6b347105485f093542e2fc7121ea63a9f83dc9d4ff0873282def00ecc3",
+      "imports": [
+        "Singularity.StableCesaro",
+        "Singularity.SLTwoHaar",
+        "Mathlib.Topology.UniformSpace.HeineCantor"
+      ]
+    },
+    {
+      "module": "Singularity.CompactBoundary",
+      "file": "Singularity/CompactBoundary.lean",
+      "sha256": "ac8871181891e2fb0e76a8fa0e7397b327fb1a2d654e4d89a67c8d9e79d9d4fe",
+      "imports": [
+        "Singularity.ProjectiveMobius",
+        "Singularity.MobiusMeasureAction",
+        "Mathlib.Analysis.Complex.UpperHalfPlane.Topology",
+        "Mathlib.Topology.Compactification.OnePoint.Sphere",
+        "Mathlib.MeasureTheory.Constructions.BorelSpace.Metrizable"
+      ]
+    },
+    {
+      "module": "Singularity.CompactBoundaryEscape",
+      "file": "Singularity/CompactBoundaryEscape.lean",
+      "sha256": "7f2d27fd943870f0dad386bb7971ba83a52b19300e388226f29dbba013890e09",
+      "imports": [
+        "Singularity.CompactBoundary",
+        "Singularity.PeriodicStrip",
+        "Singularity.InfiniteWalkProcess",
+        "Mathlib.Topology.Sequences"
+      ]
+    },
+    {
+      "module": "Singularity.CompactCosetMeasure",
+      "file": "Singularity/CompactCosetMeasure.lean",
+      "sha256": "47ba2b54ee8901feefb18f187cebcf846614dfbb979fd79fb577a6df3f490e1b",
+      "imports": [
+        "Singularity.CompactFundamentalDomain"
+      ]
+    },
+    {
+      "module": "Singularity.CompactFundamentalDomain",
+      "file": "Singularity/CompactFundamentalDomain.lean",
+      "sha256": "352a54f3ec69a166a2aa54720acde742f0104c26a35c0163f8452f640880a312",
+      "imports": [
+        "Singularity.CompactTransversal",
+        "Mathlib.Topology.Covering.Quotient",
+        "Mathlib.Topology.Algebra.ProperAction.Basic",
+        "Mathlib.Topology.Algebra.IsUniformGroup.DiscreteSubgroup",
+        "Mathlib.MeasureTheory.Measure.Haar.Quotient"
+      ]
+    },
+    {
+      "module": "Singularity.CompactMartinChart",
+      "file": "Singularity/CompactMartinChart.lean",
+      "sha256": "d080e45cb3a9e6dc56d7d48cbf7d1fd4d41a1b3c49361f805aaff24c2d122658",
+      "imports": [
+        "Singularity.GeometricMartinCovariance",
+        "Singularity.CocompactHyperbolic"
+      ]
+    },
+    {
+      "module": "Singularity.CompactMartinContinuity",
+      "file": "Singularity/CompactMartinContinuity.lean",
+      "sha256": "70ff19fc36c8586a8175a7a3c0d3441d588e39b646817887ba5bc5d5275c4ad9",
+      "imports": [
+        "Singularity.CompactMartinMap"
+      ]
+    },
+    {
+      "module": "Singularity.CompactMartinCovariance",
+      "file": "Singularity/CompactMartinCovariance.lean",
+      "sha256": "2353a74f3d157c63c79b4955ecdd060e2960f1cf86cad4cd8ab0ffd0407a0c2d",
+      "imports": [
+        "Singularity.GeometricMartinHomeomorph"
+      ]
+    },
+    {
+      "module": "Singularity.CompactMartinMap",
+      "file": "Singularity/CompactMartinMap.lean",
+      "sha256": "75e7e4199d953ef832a18e99ef6a4d1abb2abcfc2017e13f720bcd2512c4b245",
+      "imports": [
+        "Singularity.CompactMartinChart"
+      ]
+    },
+    {
+      "module": "Singularity.CompactMartinMinimality",
+      "file": "Singularity/CompactMartinMinimality.lean",
+      "sha256": "d876a03056499582cae153ccfce1b26e4fcf18441af0c5af425133d13a610d17",
+      "imports": [
+        "Singularity.CompactMartinCovariance"
+      ]
+    },
+    {
+      "module": "Singularity.CompactPoissonMeasure",
+      "file": "Singularity/CompactPoissonMeasure.lean",
+      "sha256": "e57a0928b335625e3005dc20e725101811a18070733c5a4218b529598d2d4992",
+      "imports": [
+        "Singularity.CompactBoundary"
+      ]
+    },
+    {
+      "module": "Singularity.CompactProductDensity",
+      "file": "Singularity/CompactProductDensity.lean",
+      "sha256": "399c7072ad7fa6d41544ffb148b2efddcaf7d335e26cf702cb1ab4296a100a7d",
+      "imports": [
+        "Mathlib.MeasureTheory.Measure.Prod",
+        "Mathlib.MeasureTheory.Measure.Typeclasses.NullSingletonClass",
+        "Mathlib.Topology.Order.Compact",
+        "Mathlib.Analysis.SpecialFunctions.Pow.Real"
+      ]
+    },
+    {
+      "module": "Singularity.CompactTransversal",
+      "file": "Singularity/CompactTransversal.lean",
+      "sha256": "c873a7057ca644fc11a9abef634b07ccd0c8b77c9dbec534e1a9d7ce99d4e3d2",
+      "imports": [
+        "Singularity.MeasurableTransversal",
+        "Mathlib.Topology.IsLocalHomeomorph",
+        "Mathlib.Topology.Compactness.LocallyCompact",
+        "Mathlib.MeasureTheory.Constructions.BorelSpace.Basic"
+      ]
+    },
+    {
+      "module": "Singularity.CompactWalkLimit",
+      "file": "Singularity/CompactWalkLimit.lean",
+      "sha256": "fbb6d7f87694010871863712a11edc5dc5b1ad5f3097145ce9c2754b23d26a93",
+      "imports": [
+        "Singularity.CompactBoundaryEscape",
+        "Singularity.WalkLimitConstruction",
+        "Singularity.ReflectedSupport"
+      ]
+    },
+    {
+      "module": "Singularity.ConjugateCocompact",
+      "file": "Singularity/ConjugateCocompact.lean",
+      "sha256": "f0803d995a9b32831f4dc43adfec4d5ae5cbad805b586e50909d6e5267c716c1",
+      "imports": [
+        "Singularity.ConjugateSubgroup",
+        "Singularity.CocompactRayApproximation"
+      ]
+    },
+    {
+      "module": "Singularity.ConjugateSubgroup",
+      "file": "Singularity/ConjugateSubgroup.lean",
+      "sha256": "36b368a1403ad001ce6bf525252efcf70be20a3f84e22697d399859e3127c11e",
+      "imports": [
+        "Singularity.HyperbolicTraceSquare",
+        "Singularity.CompactBoundary",
+        "Mathlib.Topology.Algebra.Group.Matrix"
+      ]
+    },
+    {
+      "module": "Singularity.ConvolutionKernel",
+      "file": "Singularity/ConvolutionKernel.lean",
+      "sha256": "c2ffa01a51189aa768d4aa6a28f0693b94b49cfc9af9d9904dcd86fdd7044b6d",
+      "imports": [
+        "Singularity.ConvolutionMultiplier",
+        "Singularity.WeightedCauchySchwarz"
+      ]
+    },
+    {
+      "module": "Singularity.ConvolutionMultiplier",
+      "file": "Singularity/ConvolutionMultiplier.lean",
+      "sha256": "1328d5f3acfe6a0dbc13711bc84070650c8ed0386454d2cf7cc3f6b4a502b9f7",
+      "imports": [
+        "Singularity.L2Convolution"
+      ]
+    },
+    {
+      "module": "Singularity.CountingL2",
+      "file": "Singularity/CountingL2.lean",
+      "sha256": "073f5fb840124575ff0b8112f9265795c72e1a8aff63fe6ac406c9ef41de8027",
+      "imports": [
+        "Singularity.Markov",
+        "Mathlib.MeasureTheory.Function.LpSpace.Indicator"
+      ]
+    },
+    {
+      "module": "Singularity.CountingModulus",
+      "file": "Singularity/CountingModulus.lean",
+      "sha256": "5df50de6c90fed90cb2e75ef528ab4627b18e7cc76bf5a79b928c28d8d0934f7",
+      "imports": [
+        "Singularity.CountingSequence",
+        "Singularity.MarkovAdjoint"
+      ]
+    },
+    {
+      "module": "Singularity.CountingSequence",
+      "file": "Singularity/CountingSequence.lean",
+      "sha256": "b2a0cbb51fe9b81e2ae93b010194a5c6670203a9932b2b5af6e37712bde85848",
+      "imports": [
+        "Singularity.SupportedL2",
+        "Singularity.DominatedLimit",
+        "Singularity.WeightedCauchySchwarz",
+        "Mathlib.MeasureTheory.Integral.Bochner.SumMeasure"
+      ]
+    },
+    {
+      "module": "Singularity.CurrentComparison",
+      "file": "Singularity/CurrentComparison.lean",
+      "sha256": "47dbdef80151d40375e80443a9c41b235e4ca2a4c2a909e4a338ff8ee0f19ae3",
+      "imports": [
+        "Singularity.WeightedCurrent",
+        "Singularity.ErgodicCurrent"
+      ]
+    },
+    {
+      "module": "Singularity.CurrentFactorization",
+      "file": "Singularity/CurrentFactorization.lean",
+      "sha256": "3a770e0dbf44f3ca1d32b537a58e8cdefe615e0994beb1cfa4ac61e78a1f1d22",
+      "imports": [
+        "Singularity.LogBoundaryMeasure",
+        "Singularity.KernelFactorization"
+      ]
+    },
+    {
+      "module": "Singularity.CurrentFrameLift",
+      "file": "Singularity/CurrentFrameLift.lean",
+      "sha256": "19e2d869602462e70a0138ced6e9d162c8f0be7f382d4175d5c9ebbf27a601bc",
+      "imports": [
+        "Singularity.FrameCoordinates",
+        "Mathlib.MeasureTheory.Group.Prod"
+      ]
+    },
+    {
+      "module": "Singularity.CurrentFrameLocalFiniteness",
+      "file": "Singularity/CurrentFrameLocalFiniteness.lean",
+      "sha256": "14c0e9c15d3e0edc4c89535bc995f4bb7327467d655ba17430803727210f3e14",
+      "imports": [
+        "Singularity.CurrentFrameLift",
+        "Singularity.FrameEndpointContinuity"
+      ]
+    },
+    {
+      "module": "Singularity.CyclicOrbits",
+      "file": "Singularity/CyclicOrbits.lean",
+      "sha256": "93aa9f4236511962f57e26c97b49d93b91605fbab686d93c622409a56290a09a",
+      "imports": [
+        "Mathlib.GroupTheory.OrderOfElement"
+      ]
+    },
+    {
+      "module": "Singularity.DensityVector",
+      "file": "Singularity/DensityVector.lean",
+      "sha256": "5c8df8bd410e3f4de99937cf49450e9cf0b41fb347dd02334e5420b293dad807",
+      "imports": [
+        "Singularity.AnalysisOperator",
+        "Mathlib.MeasureTheory.Function.StronglyMeasurable.Basic",
+        "Mathlib.MeasureTheory.Integral.Bochner.ContinuousLinearMap"
+      ]
+    },
+    {
+      "module": "Singularity.DilationGeometry",
+      "file": "Singularity/DilationGeometry.lean",
+      "sha256": "88e7a2a26aadf7de90d7653d7b887dd53b1a07e396e1c37d2dac56e012de65d7",
+      "imports": [
+        "Singularity.DilationOrbit",
+        "Mathlib.Analysis.Complex.UpperHalfPlane.Metric"
+      ]
+    },
+    {
+      "module": "Singularity.DilationNorthSouth",
+      "file": "Singularity/DilationNorthSouth.lean",
+      "sha256": "68804ed142224f36ae70fb0a2e46ad7007939dc5a3b591cfcd854b8e472ab0f3",
+      "imports": [
+        "Singularity.NorthSouthPingPong",
+        "Singularity.CompactBoundary",
+        "Singularity.DilationOrbit",
+        "Mathlib.Analysis.Normed.Group.Bounded"
+      ]
+    },
+    {
+      "module": "Singularity.DilationOrbit",
+      "file": "Singularity/DilationOrbit.lean",
+      "sha256": "73844ea99fcbebbef05c690c1fd331229f28b204cb25b147f63bffc0a082d94a",
+      "imports": [
+        "Singularity.MobiusMeasureAction",
+        "Singularity.CyclicOrbits",
+        "Singularity.MobiusBoundaryAnalysis"
+      ]
+    },
+    {
+      "module": "Singularity.DominatedLimit",
+      "file": "Singularity/DominatedLimit.lean",
+      "sha256": "548326c5e64508cbf03f2c608176e92cbbba6e7a6b9f6afc06d2ce11cb42ce26",
+      "imports": [
+        "Singularity.Operators",
+        "Mathlib.Analysis.InnerProductSpace.l2Space",
+        "Mathlib.Analysis.Normed.Group.Tannery",
+        "Mathlib.Tactic.NormNum"
+      ]
+    },
+    {
+      "module": "Singularity.EntranceOperator",
+      "file": "Singularity/EntranceOperator.lean",
+      "sha256": "7343611337e36969e6f5579256fe3a1cc039f1187cda1fd4daa5ffc6d94122e8",
+      "imports": [
+        "Singularity.FirstEntranceColumn",
+        "Singularity.HarmonicUniqueness"
+      ]
+    },
+    {
+      "module": "Singularity.EntrancePairTransfer",
+      "file": "Singularity/EntrancePairTransfer.lean",
+      "sha256": "68895090e4256a1bbc10cef43d733cd35729d4ba52a296192c31abb4ce87fb7e",
+      "imports": [
+        "Singularity.FiniteLastEntrance"
+      ]
+    },
+    {
+      "module": "Singularity.ErgodicCesaro",
+      "file": "Singularity/ErgodicCesaro.lean",
+      "sha256": "8a9fa519342ff98bf4d45a5acc20e0f84bfaf9fa4e695c410508a9b1e798130d",
+      "imports": [
+        "Mathlib.Analysis.InnerProductSpace.MeanErgodic",
+        "Mathlib.Dynamics.Ergodic.Function",
+        "Mathlib.MeasureTheory.Function.ConvergenceInMeasure",
+        "Mathlib.MeasureTheory.Function.L2Space",
+        "Mathlib.MeasureTheory.Integral.DominatedConvergence"
+      ]
+    },
+    {
+      "module": "Singularity.ErgodicCurrent",
+      "file": "Singularity/ErgodicCurrent.lean",
+      "sha256": "57eaf5279b47f379f753c53ebdabb20f67565d6c7e56f42910661b80158b02af",
+      "imports": [
+        "Mathlib.Dynamics.Ergodic.Action.Basic",
+        "Mathlib.Dynamics.Ergodic.Function",
+        "Mathlib.MeasureTheory.Measure.Decomposition.RadonNikodym"
+      ]
+    },
+    {
+      "module": "Singularity.ErgodicMeasureDichotomy",
+      "file": "Singularity/ErgodicMeasureDichotomy.lean",
+      "sha256": "f67b38aee0da0d8011d5065c8738a045f158e655a2d101c4813b856a3c8908bc",
+      "imports": [
+        "Singularity.InvariantSetDescent",
+        "Mathlib.MeasureTheory.Measure.MutuallySingular"
+      ]
+    },
+    {
+      "module": "Singularity.ErgodicMeasureFactor",
+      "file": "Singularity/ErgodicMeasureFactor.lean",
+      "sha256": "fd92c86ce47145dc187ced2641023da352274a02137dc47449ff6be23766956a",
+      "imports": [
+        "Mathlib.Dynamics.Ergodic.Action.Basic"
+      ]
+    },
+    {
+      "module": "Singularity.EventualOscillation",
+      "file": "Singularity/EventualOscillation.lean",
+      "sha256": "16f1555a61dfd9530fa6114b24aefcc2edef7768bd72e6c9004a61f2f4269eb8",
+      "imports": [
+        "Mathlib.Analysis.SpecialFunctions.Pow.Real",
+        "Mathlib.Order.Filter.AtTopBot.Basic"
+      ]
+    },
+    {
+      "module": "Singularity.ExponentialLattice",
+      "file": "Singularity/ExponentialLattice.lean",
+      "sha256": "96a38e1ba37a52316ca9e200e80bbcf7f9fe39da68b68e477bb16d8030516daa",
+      "imports": [
+        "Mathlib.Analysis.SpecialFunctions.Exp",
+        "Mathlib.Topology.Algebra.InfiniteSum.NatInt",
+        "Mathlib.Algebra.Order.Floor.Ring",
+        "Mathlib.Tactic"
+      ]
+    },
+    {
+      "module": "Singularity.FiniteBand",
+      "file": "Singularity/FiniteBand.lean",
+      "sha256": "ba762629eb6f0f9a09c492210043e2487ca09a4241d606c017345747a2d62ae3",
+      "imports": [
+        "Singularity.FrequencyKernel",
+        "Singularity.WeightedCauchySchwarz",
+        "Mathlib.MeasureTheory.Group.Integral",
+        "Mathlib.MeasureTheory.Measure.Lebesgue.Basic"
+      ]
+    },
+    {
+      "module": "Singularity.FiniteBoundaryChart",
+      "file": "Singularity/FiniteBoundaryChart.lean",
+      "sha256": "4fbfd1c78c195d62b66a0d17c484c830c736772f5352d1646ede911356ad28a8",
+      "imports": [
+        "Singularity.RealBoundaryTransport",
+        "Singularity.CompactPoissonMeasure",
+        "Singularity.PoissonDomination"
+      ]
+    },
+    {
+      "module": "Singularity.FiniteEntranceDecomposition",
+      "file": "Singularity/FiniteEntranceDecomposition.lean",
+      "sha256": "b2226c46c8cfed5fbfb1468e7ae446c2ec7e305be0ad4fea5c327c00bd2cab02",
+      "imports": [
+        "Singularity.GreenSeparator"
+      ]
+    },
+    {
+      "module": "Singularity.FiniteEntranceIteration",
+      "file": "Singularity/FiniteEntranceIteration.lean",
+      "sha256": "7152f78c281febe90cb1a0e2dca53e472bd0f82681349a5807cbf26b5eeac33d",
+      "imports": [
+        "Singularity.EntrancePairTransfer",
+        "Singularity.LocalTransferIteration",
+        "Singularity.HyperbolicHarnack",
+        "Singularity.ReflectedSupport"
+      ]
+    },
+    {
+      "module": "Singularity.FiniteLastEntrance",
+      "file": "Singularity/FiniteLastEntrance.lean",
+      "sha256": "f79b6203dec1e3a2b0844cbad773d9a5df69ff58ec23326e7511fb2e7874af4c",
+      "imports": [
+        "Singularity.FiniteEntranceDecomposition",
+        "Singularity.ReflectedSupport"
+      ]
+    },
+    {
+      "module": "Singularity.FiniteLastExitLaw",
+      "file": "Singularity/FiniteLastExitLaw.lean",
+      "sha256": "1138fc605285c1da8b03fc14f5718fa913b35538433c3838db0e7748f58095b2",
+      "imports": [
+        "Singularity.WalkLastExit",
+        "Singularity.MartinCompactness"
+      ]
+    },
+    {
+      "module": "Singularity.FiniteLastExitVertex",
+      "file": "Singularity/FiniteLastExitVertex.lean",
+      "sha256": "be8b522604fb57a411b45141362dec30113df42b4ba4a029d954f5876846fc1e",
+      "imports": [
+        "Singularity.FiniteLastExitLaw"
+      ]
+    },
+    {
+      "module": "Singularity.FiniteOrbitDisplacement",
+      "file": "Singularity/FiniteOrbitDisplacement.lean",
+      "sha256": "8e99b57b1ecbbdadaf77c9cf117bdb52bda4b8ffd0fc0862ea37d742c40c281d",
+      "imports": [
+        "Mathlib.GroupTheory.CosetCover",
+        "Mathlib.GroupTheory.GroupAction.Quotient"
+      ]
+    },
+    {
+      "module": "Singularity.FiniteWalkLaw",
+      "file": "Singularity/FiniteWalkLaw.lean",
+      "sha256": "816b80b01778d962ce69990cb236bbc227348df9360065b7e1f8ea7af9934252",
+      "imports": [
+        "Singularity.WalkKernel",
+        "Mathlib.Probability.ProbabilityMassFunction.Constructions"
+      ]
+    },
+    {
+      "module": "Singularity.FirstEntrance",
+      "file": "Singularity/FirstEntrance.lean",
+      "sha256": "ac5ad9cb141572ec222781e41a4cea1949dede32ea49979094b72c8bce68d58e",
+      "imports": [
+        "Singularity.WalkKernel"
+      ]
+    },
+    {
+      "module": "Singularity.FirstEntranceColumn",
+      "file": "Singularity/FirstEntranceColumn.lean",
+      "sha256": "f0496f991626d0c06fdde57ad8a6991360dea8235ef1cddf9594448b479de1fd",
+      "imports": [
+        "Singularity.FirstEntrance",
+        "Singularity.SupportedL2"
+      ]
+    },
+    {
+      "module": "Singularity.FirstEntranceHarmonic",
+      "file": "Singularity/FirstEntranceHarmonic.lean",
+      "sha256": "e4a874e09c3330b0bd33b68fed603b80f76732765ab99e43feb47beea8b8a198",
+      "imports": [
+        "Singularity.FirstEntrance",
+        "Singularity.StationaryCurrent"
+      ]
+    },
+    {
+      "module": "Singularity.FourierReduction",
+      "file": "Singularity/FourierReduction.lean",
+      "sha256": "84b057586a75a9cd0b0d6cdf82121bfecc1a44c49011980331572a5fdeae36b5",
+      "imports": [
+        "Mathlib.Analysis.Fourier.LpSpace",
+        "Mathlib.Analysis.SpecialFunctions.Trigonometric.DerivHyp",
+        "Mathlib.LinearAlgebra.FiniteDimensional.Lemmas",
+        "Mathlib.Tactic.Positivity",
+        "Mathlib.Tactic.NormNum"
+      ]
+    },
+    {
+      "module": "Singularity.FourierTranslation",
+      "file": "Singularity/FourierTranslation.lean",
+      "sha256": "0c419c695581c3bcd452ef7b5e3ed4b41f2e8289fa853e29ec30908cf68aab38",
+      "imports": [
+        "Singularity.FourierReduction",
+        "Mathlib.MeasureTheory.Function.Holder",
+        "Mathlib.MeasureTheory.Group.Integral",
+        "Mathlib.MeasureTheory.Measure.Lebesgue.Basic"
+      ]
+    },
+    {
+      "module": "Singularity.FrameCoordinates",
+      "file": "Singularity/FrameCoordinates.lean",
+      "sha256": "03af51929939eebf9da8e7a0ccb7198c628fbec3264d2188e03fe597eff1358f",
+      "imports": [
+        "Singularity.BoundaryFrameSection",
+        "Singularity.FrameStabilizer"
+      ]
+    },
+    {
+      "module": "Singularity.FrameEndpointContinuity",
+      "file": "Singularity/FrameEndpointContinuity.lean",
+      "sha256": "aabdd3cf5f0fe6ea409cf145429864b4279191e608c4e2451cc9c2fc958afdc4",
+      "imports": [
+        "Singularity.FrameCoordinates"
+      ]
+    },
+    {
+      "module": "Singularity.FrameFiberHaar",
+      "file": "Singularity/FrameFiberHaar.lean",
+      "sha256": "810e03c8cde995fffe3b5bfa877c7867c72db89d8d3e72a0900b773f6518da28",
+      "imports": [
+        "Singularity.FrameStabilizer"
+      ]
+    },
+    {
+      "module": "Singularity.FrameStabilizer",
+      "file": "Singularity/FrameStabilizer.lean",
+      "sha256": "9f094859efeb1b885702d99eeb90f8fc4503c56892429adef19056ddf9e98018",
+      "imports": [
+        "Singularity.BoundaryPairTransitivity",
+        "Singularity.SLTwoHaar"
+      ]
+    },
+    {
+      "module": "Singularity.FreeGroupNonamenable",
+      "file": "Singularity/FreeGroupNonamenable.lean",
+      "sha256": "a70939371cf4509edc1db393b8c8a73052d138cb42702a930924685c28fc4a9f",
+      "imports": [
+        "Singularity.InvariantMeanTransport",
+        "Mathlib.GroupTheory.FreeGroup.Orbit"
+      ]
+    },
+    {
+      "module": "Singularity.FrequencyKernel",
+      "file": "Singularity/FrequencyKernel.lean",
+      "sha256": "2980a49235d4464573e56fe2d8b0fa36ed1686fc1d88becd29a8d6ede5f31ae8",
+      "imports": [
+        "Singularity.MeasurableKernel",
+        "Singularity.FourierReduction",
+        "Mathlib.Analysis.Matrix.Normed",
+        "Mathlib.Analysis.Matrix.MeasurableSpace",
+        "Mathlib.Analysis.Normed.Lp.MeasurableSpace"
+      ]
+    },
+    {
+      "module": "Singularity.FuchsianCocompactSingularity",
+      "file": "Singularity/FuchsianCocompactSingularity.lean",
+      "sha256": "5f96c11c28a140c509f74df99ed4ef50f7f6a535dd54fb4d2e87ac2fcdddef36",
+      "imports": [
+        "Singularity.ProjectiveCocompactSingularity",
+        "Singularity.ProjectiveNonelementary"
+      ]
+    },
+    {
+      "module": "Singularity.FuchsianWalkConvergence",
+      "file": "Singularity/FuchsianWalkConvergence.lean",
+      "sha256": "09d7855ee44519a188234462f534812034224660e99754f6cb7775061af0b801",
+      "imports": [
+        "Singularity.HyperbolicOrbitGrowth",
+        "Singularity.SpectralEscape",
+        "Singularity.GeometricPathConvergence"
+      ]
+    },
+    {
+      "module": "Singularity.GammaDensity",
+      "file": "Singularity/GammaDensity.lean",
+      "sha256": "89d346f8c6db84d118aa3142b605fb71196c225b9cb55f63564bfc934239f602",
+      "imports": [
+        "Singularity.FourierReduction",
+        "Mathlib.Analysis.SpecialFunctions.Gamma.Beta",
+        "Mathlib.Analysis.Fourier.Convolution"
+      ]
+    },
+    {
+      "module": "Singularity.GeometricDetour",
+      "file": "Singularity/GeometricDetour.lean",
+      "sha256": "3c9baa94ef2bf206cd0514c3cc6ecccfdf7529388bb40421bb638c7f6e36621c",
+      "imports": [
+        "Singularity.CayleyMetric",
+        "Singularity.GeometricStrip",
+        "Singularity.KilledWalk"
+      ]
+    },
+    {
+      "module": "Singularity.GeometricEntranceErrors",
+      "file": "Singularity/GeometricEntranceErrors.lean",
+      "sha256": "bd09f0cdd07c7b53e062f9d8f582c352e22c5b60e0cab5b24f774a814f89455f",
+      "imports": [
+        "Singularity.EntrancePairTransfer",
+        "Singularity.CocompactRelativeDetour"
+      ]
+    },
+    {
+      "module": "Singularity.GeometricEntranceIteration",
+      "file": "Singularity/GeometricEntranceIteration.lean",
+      "sha256": "32a2a8972263a9784818b4cd697139418a0442026052f21d50df643011b10a8f",
+      "imports": [
+        "Singularity.FiniteEntranceIteration",
+        "Singularity.GeometricEntranceErrors"
+      ]
+    },
+    {
+      "module": "Singularity.GeometricHittingErgodicity",
+      "file": "Singularity/GeometricHittingErgodicity.lean",
+      "sha256": "e34bb7d9a7d034c8a6915eb109b7de287708bd371d83b23c919b76aa1936ee55",
+      "imports": [
+        "Singularity.WalkBoundaryErgodicity",
+        "Singularity.ErgodicMeasureDichotomy",
+        "Singularity.GeometricHittingMeasure"
+      ]
+    },
+    {
+      "module": "Singularity.GeometricHittingMeasure",
+      "file": "Singularity/GeometricHittingMeasure.lean",
+      "sha256": "8d2f81a1adedcd0f9d8d57dfca00ae51945c2653b8e787778d393e3dbf86911c",
+      "imports": [
+        "Singularity.RealGeometricHittingLaw",
+        "Singularity.StationaryDensity",
+        "Singularity.BoundaryMeasureClasses"
+      ]
+    },
+    {
+      "module": "Singularity.GeometricKernelCurrent",
+      "file": "Singularity/GeometricKernelCurrent.lean",
+      "sha256": "4c672cfba273c98c1fbcd4ba850069e2943b131a9f7d271f1ccfb243e069e448",
+      "imports": [
+        "Singularity.BoundaryPairInvariance"
+      ]
+    },
+    {
+      "module": "Singularity.GeometricLastExitConvergence",
+      "file": "Singularity/GeometricLastExitConvergence.lean",
+      "sha256": "7f2a2a148eac1773b81e3fdf1d806bf5bb7ab94f5a6339157e14693f0e5fd3d3",
+      "imports": [
+        "Singularity.LastExitConvergence",
+        "Singularity.HittingBasepoint",
+        "Singularity.CompactMartinMap"
+      ]
+    },
+    {
+      "module": "Singularity.GeometricLiouvilleComparison",
+      "file": "Singularity/GeometricLiouvilleComparison.lean",
+      "sha256": "9426a2c0c58a19e2bf05feb4ceb1ed54bbdcd5c577cada49408e6e1b25a6c03a",
+      "imports": [
+        "Singularity.LiouvilleInvariance",
+        "Singularity.GeometricKernelCurrent"
+      ]
+    },
+    {
+      "module": "Singularity.GeometricMartinContinuity",
+      "file": "Singularity/GeometricMartinContinuity.lean",
+      "sha256": "32c7c40c95c8d30b565bf0d76c42ed8104bbfb1eb473b106c66d30db887988de",
+      "imports": [
+        "Singularity.GeometricMartinConvergence"
+      ]
+    },
+    {
+      "module": "Singularity.GeometricMartinConvergence",
+      "file": "Singularity/GeometricMartinConvergence.lean",
+      "sha256": "f88171282a2180ba93d701d9bce6f2af550dca40f24cc68f50b87926420729cb",
+      "imports": [
+        "Singularity.BoundaryMartinComparison"
+      ]
+    },
+    {
+      "module": "Singularity.GeometricMartinCovariance",
+      "file": "Singularity/GeometricMartinCovariance.lean",
+      "sha256": "420fe748d367e36e7eb1be64e621e5acaffedd6781fa877831c8f7e776c283f9",
+      "imports": [
+        "Singularity.GeometricMartinContinuity",
+        "Singularity.MartinAction",
+        "Singularity.PoissonMobius"
+      ]
+    },
+    {
+      "module": "Singularity.GeometricMartinHomeomorph",
+      "file": "Singularity/GeometricMartinHomeomorph.lean",
+      "sha256": "422e1362799d62b2570c52656e74d7879cce1e754d9665a798b8fc8c9bc786f1",
+      "imports": [
+        "Singularity.CompactMartinContinuity",
+        "Singularity.CompactBoundaryEscape"
+      ]
+    },
+    {
+      "module": "Singularity.GeometricNaimContinuity",
+      "file": "Singularity/GeometricNaimContinuity.lean",
+      "sha256": "294a34681bba4aca2eb0a89cc73dad16e122ef58c6cf2f1cc2d508489cf59444",
+      "imports": [
+        "Singularity.GeometricNaimKernel"
+      ]
+    },
+    {
+      "module": "Singularity.GeometricNaimCovariance",
+      "file": "Singularity/GeometricNaimCovariance.lean",
+      "sha256": "40c071e145a172d757b48778543a493f9a1159c474d76898afda43b5d5535825",
+      "imports": [
+        "Singularity.GeometricNaimContinuity",
+        "Singularity.NaimCovariance"
+      ]
+    },
+    {
+      "module": "Singularity.GeometricNaimCurrent",
+      "file": "Singularity/GeometricNaimCurrent.lean",
+      "sha256": "218b3de0fc99fb60a17699b311eeea0de6e2a92897c69cf7313dfcecd8479f9e",
+      "imports": [
+        "Singularity.GeometricNaimCovariance",
+        "Singularity.HittingMartinIdentification",
+        "Singularity.GeometricKernelCurrent"
+      ]
+    },
+    {
+      "module": "Singularity.GeometricNaimFrameMeasure",
+      "file": "Singularity/GeometricNaimFrameMeasure.lean",
+      "sha256": "e4d7351221d9ff85adf5871f305d25f8b0ad8619c65c3ba8f21f405737623867",
+      "imports": [
+        "Singularity.GeometricNaimCurrent",
+        "Singularity.CurrentFrameLift",
+        "Singularity.FrameFiberHaar",
+        "Singularity.CurrentFrameLocalFiniteness"
+      ]
+    },
+    {
+      "module": "Singularity.GeometricNaimKernel",
+      "file": "Singularity/GeometricNaimKernel.lean",
+      "sha256": "2957f9708b89ca2853d4952f3cd13d1245f7038552b04084a308ed3d95508a35",
+      "imports": [
+        "Singularity.TransverseMartinVectors",
+        "Singularity.StripNaimKernel"
+      ]
+    },
+    {
+      "module": "Singularity.GeometricNaimQuotient",
+      "file": "Singularity/GeometricNaimQuotient.lean",
+      "sha256": "614bbbf087a42575339fdba41a97432141cf9bb23e109e45353647251ea3f265",
+      "imports": [
+        "Singularity.GeometricNaimFrameMeasure",
+        "Singularity.CompactCosetMeasure",
+        "Singularity.CocompactGroupQuotient"
+      ]
+    },
+    {
+      "module": "Singularity.GeometricPathConvergence",
+      "file": "Singularity/GeometricPathConvergence.lean",
+      "sha256": "608dea09f09ef1fbb46ab554b580df1accad4bf10dc30e753909485cf4b95550",
+      "imports": [
+        "Singularity.CayleyCompactification",
+        "Singularity.CompactWalkLimit",
+        "Singularity.GeometricStrip",
+        "Mathlib.Analysis.Normed.Group.InfiniteSum",
+        "Mathlib.Topology.Algebra.InfiniteSum.Real"
+      ]
+    },
+    {
+      "module": "Singularity.GeometricStrip",
+      "file": "Singularity/GeometricStrip.lean",
+      "sha256": "3ba2dc5a82a7bb2e39c6a8cb5d6e95c5889d873777d068afe879113c55e83127",
+      "imports": [
+        "Singularity.StripOrbits",
+        "Singularity.StripSeparation"
+      ]
+    },
+    {
+      "module": "Singularity.Green",
+      "file": "Singularity/Green.lean",
+      "sha256": "acadf52f658931e8c12f400be2c70901094ed3398efb6bd0c95919ad20844abc",
+      "imports": [
+        "Singularity.Operators",
+        "Mathlib.Analysis.Normed.Algebra.Spectrum"
+      ]
+    },
+    {
+      "module": "Singularity.GreenAdjoint",
+      "file": "Singularity/GreenAdjoint.lean",
+      "sha256": "14578744dc01426fabb657f67d34403b3828ca7b3d0e9e95ac28bb130d32e3f9",
+      "imports": [
+        "Singularity.GreenSeries",
+        "Singularity.MarkovAdjoint",
+        "Singularity.WalkKernel"
+      ]
+    },
+    {
+      "module": "Singularity.GreenBoundary",
+      "file": "Singularity/GreenBoundary.lean",
+      "sha256": "8ccb56b51790216e9869df99c5a4267077ce847e9140aac93b139444e37021bc",
+      "imports": [
+        "Singularity.GreenAdjoint",
+        "Singularity.CountingSequence",
+        "Singularity.GreenSeparator"
+      ]
+    },
+    {
+      "module": "Singularity.GreenFirstHit",
+      "file": "Singularity/GreenFirstHit.lean",
+      "sha256": "12f68ec50ef47e4d2580f2bd8a585be699132c67b1e965e4572dcbd74d220b34",
+      "imports": [
+        "Singularity.FirstEntranceHarmonic",
+        "Singularity.EntranceOperator"
+      ]
+    },
+    {
+      "module": "Singularity.GreenHarnack",
+      "file": "Singularity/GreenHarnack.lean",
+      "sha256": "f069f2d7384cee8fce73c1a39f3b90825ce29ff0afff8963a9178289aad3c483",
+      "imports": [
+        "Singularity.GreenPositive"
+      ]
+    },
+    {
+      "module": "Singularity.GreenMartinLower",
+      "file": "Singularity/GreenMartinLower.lean",
+      "sha256": "0d971da5116adda3dbc1880923c3d1e656d234ab4927850f77cba935dd26d237",
+      "imports": [
+        "Singularity.CocompactExcessAncona",
+        "Singularity.MartinApproximation"
+      ]
+    },
+    {
+      "module": "Singularity.GreenPoissonBounds",
+      "file": "Singularity/GreenPoissonBounds.lean",
+      "sha256": "bb1bda9ef1dfbc13c4979940dcff48528807ef40a66bfa64a981c2aaf3f8054a",
+      "imports": [
+        "Singularity.VisualPoissonDecay",
+        "Singularity.GeometricStrip"
+      ]
+    },
+    {
+      "module": "Singularity.GreenPositive",
+      "file": "Singularity/GreenPositive.lean",
+      "sha256": "6bdb2dcedc35d8e5407c20d89f42afd4bd76d2c757836d6f734e15120b7f13c0",
+      "imports": [
+        "Singularity.WalkKernel",
+        "Mathlib.Algebra.Group.Submonoid.Membership"
+      ]
+    },
+    {
+      "module": "Singularity.GreenProductBounds",
+      "file": "Singularity/GreenProductBounds.lean",
+      "sha256": "4e9688e1c1b747dbd32afb61bd95994ff5d367d76ee04ff4347180c6c76a4054",
+      "imports": [
+        "Singularity.FiniteEntranceDecomposition",
+        "Singularity.GreenFirstHit"
+      ]
+    },
+    {
+      "module": "Singularity.GreenSeparator",
+      "file": "Singularity/GreenSeparator.lean",
+      "sha256": "dced8ce3043fe55c4d85b9c6169174505abf61170c8bad9a150707077cfe5bc2",
+      "imports": [
+        "Singularity.KilledWalk",
+        "Singularity.EntranceOperator"
+      ]
+    },
+    {
+      "module": "Singularity.GreenSeries",
+      "file": "Singularity/GreenSeries.lean",
+      "sha256": "67bf746270534e4e36f7666c25b9b2fcb4b98200aa81ffc4a5320b85b27603db",
+      "imports": [
+        "Singularity.Green",
+        "Mathlib.Analysis.Normed.Algebra.GelfandFormula"
+      ]
+    },
+    {
+      "module": "Singularity.GreenVanishing",
+      "file": "Singularity/GreenVanishing.lean",
+      "sha256": "ff149fb47d9aa16e6fe5ba873e1344da1330a7a1fb52dc097403881f72dda531",
+      "imports": [
+        "Singularity.WeightedOccupation"
+      ]
+    },
+    {
+      "module": "Singularity.GreenVisualLower",
+      "file": "Singularity/GreenVisualLower.lean",
+      "sha256": "81ea6acc011d359a02c3a52647c3e7ad79897903879d7137eb8f0cabb8a01b2e",
+      "imports": [
+        "Singularity.GreenMartinLower",
+        "Singularity.HittingMartinBounds",
+        "Singularity.GreenVisualUpper"
+      ]
+    },
+    {
+      "module": "Singularity.GreenVisualUpper",
+      "file": "Singularity/GreenVisualUpper.lean",
+      "sha256": "4a75bf2df662ae00095673bee54f5f7f0814c915a299b80e38c134c1ce184c40",
+      "imports": [
+        "Singularity.GreenFirstHit",
+        "Singularity.PoissonDominationDecay",
+        "Singularity.GeometricHittingMeasure"
+      ]
+    },
+    {
+      "module": "Singularity.HarmonicMinimality",
+      "file": "Singularity/HarmonicMinimality.lean",
+      "sha256": "82d80ee2b4d14dfda089d64284332424f79d88120bb978a38e829d39c179884b",
+      "imports": [
+        "Singularity.EventualOscillation",
+        "Singularity.GreenFirstHit"
+      ]
+    },
+    {
+      "module": "Singularity.HarmonicUniqueness",
+      "file": "Singularity/HarmonicUniqueness.lean",
+      "sha256": "ca23fb01c50e9e0a3ba56ccfb9940cc19f4bfbeab22df34750f09b6b3e2436de",
+      "imports": [
+        "Singularity.SupportedL2",
+        "Singularity.Green"
+      ]
+    },
+    {
+      "module": "Singularity.HittingBasepoint",
+      "file": "Singularity/HittingBasepoint.lean",
+      "sha256": "dbc54fe745ca0b98156fc8bba4c35b26d1f41acc3923f40aacb43f04fa3eb113",
+      "imports": [
+        "Singularity.GeometricHittingMeasure"
+      ]
+    },
+    {
+      "module": "Singularity.HittingConjugacy",
+      "file": "Singularity/HittingConjugacy.lean",
+      "sha256": "8d3bc4ebfce99dd796222890e2cf6b939dbbf57a272821d28c1385f2f9ff5991",
+      "imports": [
+        "Singularity.HittingBasepoint",
+        "Singularity.WalkTransport",
+        "Singularity.BoundaryConjugacy"
+      ]
+    },
+    {
+      "module": "Singularity.HittingDensityPairing",
+      "file": "Singularity/HittingDensityPairing.lean",
+      "sha256": "5dddf8ff4d092bccc40efe6f162d19e2246dcdbae320fdeb95f288955aaf91fd",
+      "imports": [
+        "Singularity.HittingOrbitColumns",
+        "Singularity.NaimOrbitPairing",
+        "Singularity.RealCurrentChart",
+        "Singularity.KernelFactorization",
+        "Singularity.GeometricKernelCurrent"
+      ]
+    },
+    {
+      "module": "Singularity.HittingMartinBounds",
+      "file": "Singularity/HittingMartinBounds.lean",
+      "sha256": "f48372f4102ad25bf3f1b22b2e9865567954ef77b72dce1f8f28e109e5f5af7c",
+      "imports": [
+        "Singularity.HittingMartinIdentification",
+        "Singularity.VisualPoissonComparison"
+      ]
+    },
+    {
+      "module": "Singularity.HittingMartinDensity",
+      "file": "Singularity/HittingMartinDensity.lean",
+      "sha256": "bb16d802a4e9ea3e7e9cbcae8c79ece33fb11fa373297671f053e52c5598fb73",
+      "imports": [
+        "Singularity.HittingMartinIntegral",
+        "Singularity.RealBoundaryTransport"
+      ]
+    },
+    {
+      "module": "Singularity.HittingMartinIdentification",
+      "file": "Singularity/HittingMartinIdentification.lean",
+      "sha256": "4052fe4ac5ec7ca796ad339b1313a75d6a87177e7ddd71fbbd7f8ec55537f264",
+      "imports": [
+        "Singularity.HittingMartinDensity",
+        "Singularity.CompactMartinMinimality"
+      ]
+    },
+    {
+      "module": "Singularity.HittingMartinIntegral",
+      "file": "Singularity/HittingMartinIntegral.lean",
+      "sha256": "784fc38a4292fcd4ed3ddf8a1ee07f65b4badff1712c647d7bc341664baa65ef",
+      "imports": [
+        "Singularity.GeometricLastExitConvergence",
+        "Singularity.LastExitExpectation",
+        "Singularity.CompactMartinContinuity",
+        "Mathlib.MeasureTheory.Integral.DominatedConvergence",
+        "Mathlib.MeasureTheory.Measure.HasOuterApproxClosed"
+      ]
+    },
+    {
+      "module": "Singularity.HittingMeasureAtoms",
+      "file": "Singularity/HittingMeasureAtoms.lean",
+      "sha256": "e712810f952c87870f2563b8831734f25b80a57f885943a427121256f4bc37df",
+      "imports": [
+        "Singularity.StationaryAtoms",
+        "Singularity.GeometricHittingMeasure",
+        "Mathlib.MeasureTheory.Measure.Prod"
+      ]
+    },
+    {
+      "module": "Singularity.HittingOrbitColumns",
+      "file": "Singularity/HittingOrbitColumns.lean",
+      "sha256": "600aef02b09a274884f57b93709f4b6a0257fa134b7444507bd34079c3c341fe",
+      "imports": [
+        "Singularity.RealHittingMartinDensity",
+        "Singularity.MobiusOrbitDensity",
+        "Singularity.GeometricHittingErgodicity"
+      ]
+    },
+    {
+      "module": "Singularity.HomogeneousMeasureClass",
+      "file": "Singularity/HomogeneousMeasureClass.lean",
+      "sha256": "1d3a7f363ebc04b8ee398b7de17294fbfbd217d90e9f7c53a8c60f305756668a",
+      "imports": [
+        "Mathlib.MeasureTheory.Group.Prod",
+        "Mathlib.Algebra.Group.Action.Pretransitive"
+      ]
+    },
+    {
+      "module": "Singularity.HyperbolicAxisNormalization",
+      "file": "Singularity/HyperbolicAxisNormalization.lean",
+      "sha256": "1e8f6c62dc10ae62a584a4b041ac38a69bdffb18f45848ea7dbddffe8d760944",
+      "imports": [
+        "Singularity.AxisBallSeparation",
+        "Mathlib.Analysis.Complex.UpperHalfPlane.ProperAction",
+        "Mathlib.Topology.Algebra.Group.Matrix",
+        "Mathlib.Topology.Order.IntermediateValue"
+      ]
+    },
+    {
+      "module": "Singularity.HyperbolicChains",
+      "file": "Singularity/HyperbolicChains.lean",
+      "sha256": "6c8fcceff5afbf0c77619e9c0ffb00d2951ff52651b9c5c16d94347fca7ce675",
+      "imports": [
+        "Singularity.MetricChains",
+        "Singularity.HyperbolicGrid"
+      ]
+    },
+    {
+      "module": "Singularity.HyperbolicEigenvalues",
+      "file": "Singularity/HyperbolicEigenvalues.lean",
+      "sha256": "8d3ee1f8c0a6f84009e27675aba921761467feb9781281f096426a8d9442bf4f",
+      "imports": [
+        "Singularity.DilationOrbit"
+      ]
+    },
+    {
+      "module": "Singularity.HyperbolicGreenDetour",
+      "file": "Singularity/HyperbolicGreenDetour.lean",
+      "sha256": "093f33c85f97b05aa00e7c01ebbfe06cbe4cc7574496b4406ae9e78c71aa98f5",
+      "imports": [
+        "Singularity.GeometricDetour",
+        "Singularity.KilledGreenDecay",
+        "Singularity.KilledWalkTransport"
+      ]
+    },
+    {
+      "module": "Singularity.HyperbolicGrid",
+      "file": "Singularity/HyperbolicGrid.lean",
+      "sha256": "39a97f1851b049b99010d7b5f39aaf2a3e28c707a342812713ccec9b59c1ca20",
+      "imports": [
+        "Singularity.CayleyMetric",
+        "Mathlib.Algebra.Order.Floor.Ring",
+        "Mathlib.Data.Int.Interval"
+      ]
+    },
+    {
+      "module": "Singularity.HyperbolicHarnack",
+      "file": "Singularity/HyperbolicHarnack.lean",
+      "sha256": "a95866ede0b7885c94f6f98bfb2875b51762d032c355987f0008a316f5c43c88",
+      "imports": [
+        "Singularity.GreenHarnack",
+        "Singularity.HyperbolicOrbitGrowth"
+      ]
+    },
+    {
+      "module": "Singularity.HyperbolicNonamenable",
+      "file": "Singularity/HyperbolicNonamenable.lean",
+      "sha256": "1cd2ab21e6ab7037c4608b36422d5461095c0c4e6326708a4646f7560b37a923",
+      "imports": [
+        "Singularity.DilationNorthSouth",
+        "Singularity.NorthSouthNonamenable",
+        "Singularity.NonamenableHittingLaw"
+      ]
+    },
+    {
+      "module": "Singularity.HyperbolicNormalization",
+      "file": "Singularity/HyperbolicNormalization.lean",
+      "sha256": "928e0d4a71d1451158cfe41601a13a6b5d74ac09fa84c72cd66b34a3593cf54a",
+      "imports": [
+        "Singularity.HyperbolicEigenvalues"
+      ]
+    },
+    {
+      "module": "Singularity.HyperbolicOrbitGrowth",
+      "file": "Singularity/HyperbolicOrbitGrowth.lean",
+      "sha256": "4d8fe83665a429f47c2e69aaf0a5a56569f1853be1e03c05ace36772c32cbf0c",
+      "imports": [
+        "Singularity.HyperbolicGrid",
+        "Singularity.PeriodicStrip"
+      ]
+    },
+    {
+      "module": "Singularity.HyperbolicTraceNormalization",
+      "file": "Singularity/HyperbolicTraceNormalization.lean",
+      "sha256": "3607e2cb7d34ae8d44682301c4674b0def7486edaab70527d85f7f279e41348d",
+      "imports": [
+        "Singularity.HyperbolicNormalization"
+      ]
+    },
+    {
+      "module": "Singularity.HyperbolicTraceSquare",
+      "file": "Singularity/HyperbolicTraceSquare.lean",
+      "sha256": "3bbd2deaae55fb5d09281920dea04e39bec3fd2a61a77c3eef34a640e07cac1d",
+      "imports": [
+        "Singularity.HyperbolicTraceNormalization"
+      ]
+    },
+    {
+      "module": "Singularity.IndependentShift",
+      "file": "Singularity/IndependentShift.lean",
+      "sha256": "49f6d838682baef7560be87fa38863f1ef70b5768e5d61ce48ad3a168f1f04ca",
+      "imports": [
+        "Mathlib.Probability.Independence.ZeroOne",
+        "Mathlib.Probability.Independence.InfinitePi"
+      ]
+    },
+    {
+      "module": "Singularity.InfiniteFirstEntrance",
+      "file": "Singularity/InfiniteFirstEntrance.lean",
+      "sha256": "0f50bc547747f2b4bc59983e49f1bb68b82fb4f0682b646f58b9256e2019444a",
+      "imports": [
+        "Singularity.InfiniteWalkProcess",
+        "Singularity.FirstEntrance"
+      ]
+    },
+    {
+      "module": "Singularity.InfiniteWalkLaw",
+      "file": "Singularity/InfiniteWalkLaw.lean",
+      "sha256": "af13126abd8d000b3e7faa72fd41204c8db2b0b2ffa73ec7feeb5a1a980fb5f1",
+      "imports": [
+        "Singularity.FiniteWalkLaw",
+        "Mathlib.Probability.Independence.InfinitePi"
+      ]
+    },
+    {
+      "module": "Singularity.InfiniteWalkProcess",
+      "file": "Singularity/InfiniteWalkProcess.lean",
+      "sha256": "92198dfd9eb3e5a3ea249e9fd434568903491f80dfbae137592022e5fa3d886b",
+      "imports": [
+        "Singularity.InfiniteWalkLaw",
+        "Mathlib.MeasureTheory.OuterMeasure.BorelCantelli",
+        "Mathlib.MeasureTheory.Integral.Lebesgue.Markov"
+      ]
+    },
+    {
+      "module": "Singularity.InvariantMean",
+      "file": "Singularity/InvariantMean.lean",
+      "sha256": "9afc4fbfc6b87be54a96dca6c360890fd05e158a4fc44932a81edc6e338415a5",
+      "imports": [
+        "Singularity.L2InvariantMean"
+      ]
+    },
+    {
+      "module": "Singularity.InvariantMeanTransport",
+      "file": "Singularity/InvariantMeanTransport.lean",
+      "sha256": "a553e06302b562789e100c65f89bf951db040d00c9206c52812f904d5c904b1c",
+      "imports": [
+        "Singularity.InvariantMean",
+        "Mathlib.GroupTheory.Coset.Basic"
+      ]
+    },
+    {
+      "module": "Singularity.InvariantSetDescent",
+      "file": "Singularity/InvariantSetDescent.lean",
+      "sha256": "b053959909f922942b0637b338f43da1c26c29c4130e261cb1137e1f3c5969b7",
+      "imports": [
+        "Mathlib.MeasureTheory.Group.Action",
+        "Mathlib.MeasureTheory.Group.FundamentalDomain"
+      ]
+    },
+    {
+      "module": "Singularity.InvolutiveKernelGeneration",
+      "file": "Singularity/InvolutiveKernelGeneration.lean",
+      "sha256": "c5acc2c886a91b049173324c1ede78a1f73fc98597da0118d58edc4956b92d24",
+      "imports": [
+        "Mathlib.Algebra.Group.Submonoid.Basic",
+        "Mathlib.Algebra.Group.Subgroup.Basic"
+      ]
+    },
+    {
+      "module": "Singularity.KernelFactorization",
+      "file": "Singularity/KernelFactorization.lean",
+      "sha256": "e3eb35d55b0c90c4e7e972d385153b203562d49d542b9ef534cef097eec84584",
+      "imports": [
+        "Singularity.DensityVector",
+        "Singularity.LiouvilleOperator"
+      ]
+    },
+    {
+      "module": "Singularity.KernelProjection",
+      "file": "Singularity/KernelProjection.lean",
+      "sha256": "808791e820771a00b32baec7a36e09f6631d55f57274ee998a13cc57dd44db9d",
+      "imports": [
+        "Mathlib.Analysis.InnerProductSpace.MeanErgodic",
+        "Mathlib.Analysis.InnerProductSpace.Adjoint",
+        "Mathlib.MeasureTheory.Constructions.BorelSpace.Metrizable",
+        "Mathlib.Tactic"
+      ]
+    },
+    {
+      "module": "Singularity.KilledGreenDecay",
+      "file": "Singularity/KilledGreenDecay.lean",
+      "sha256": "94a9bd698e500575ce01e6e27940e344a9250cc4aa4fef03339e78f0be7b3c2f",
+      "imports": [
+        "Singularity.SpectralEscape",
+        "Singularity.KilledWalk"
+      ]
+    },
+    {
+      "module": "Singularity.KilledWalk",
+      "file": "Singularity/KilledWalk.lean",
+      "sha256": "03b6a836c706eda3ce53222430dd436b5507c045fc977489c817a23c1c4b4650",
+      "imports": [
+        "Singularity.FirstEntranceColumn"
+      ]
+    },
+    {
+      "module": "Singularity.KilledWalkTransport",
+      "file": "Singularity/KilledWalkTransport.lean",
+      "sha256": "fb19f44694db48f5c27a8f52a75b16893bbc5d625a81abd8a6d3290f587d177b",
+      "imports": [
+        "Singularity.KilledWalk"
+      ]
+    },
+    {
+      "module": "Singularity.L2Convolution",
+      "file": "Singularity/L2Convolution.lean",
+      "sha256": "4abc3dd00ac9c7acc908e883874860bd1ee356e97a9e4087a8ca24a6ba60a0fd",
+      "imports": [
+        "Singularity.FourierTranslation",
+        "Mathlib.MeasureTheory.Function.LpSpace.ContinuousCompMeasurePreserving",
+        "Mathlib.MeasureTheory.Integral.Prod"
+      ]
+    },
+    {
+      "module": "Singularity.L2InvariantMean",
+      "file": "Singularity/L2InvariantMean.lean",
+      "sha256": "db4fcfd6877bb7aedd6005d4106b5a5b67c0dc413808847e0a9378816eef7a6f",
+      "imports": [
+        "Singularity.L2SetMass",
+        "Singularity.AlmostInvariantL2",
+        "Mathlib.Topology.Order.Compact",
+        "Mathlib.Topology.Instances.Real.Lemmas"
+      ]
+    },
+    {
+      "module": "Singularity.L2SetMass",
+      "file": "Singularity/L2SetMass.lean",
+      "sha256": "55a009f3160f1a590a9a166d79a222b667ff30db1adea6779f4be46c662b78d8",
+      "imports": [
+        "Singularity.GreenBoundary",
+        "Singularity.MarkovAdjoint",
+        "Mathlib.MeasureTheory.Integral.Bochner.Set",
+        "Mathlib.MeasureTheory.Group.MeasurableEquiv"
+      ]
+    },
+    {
+      "module": "Singularity.LastExitConvergence",
+      "file": "Singularity/LastExitConvergence.lean",
+      "sha256": "2d32d05193d4d1e32625a8f054a9b6079b24ccbf62f4befb80cc34bbf4a0bcdb",
+      "imports": [
+        "Singularity.FiniteLastExitVertex"
+      ]
+    },
+    {
+      "module": "Singularity.LastExitExpectation",
+      "file": "Singularity/LastExitExpectation.lean",
+      "sha256": "940d3eff21836b24c2cd62c32df0f528e20bd3ad5b4402870b098aaed51643ad",
+      "imports": [
+        "Singularity.FiniteLastExitVertex",
+        "Mathlib.MeasureTheory.Integral.Bochner.SumMeasure"
+      ]
+    },
+    {
+      "module": "Singularity.LatticeObstruction",
+      "file": "Singularity/LatticeObstruction.lean",
+      "sha256": "a377647d9250e350775171cfb376fed5497e86b77e7f95464dfbf5d03e3e2df7",
+      "imports": [
+        "Singularity.BandOrthogonality",
+        "Singularity.FourierTranslation"
+      ]
+    },
+    {
+      "module": "Singularity.LiouvilleBoundaryKernel",
+      "file": "Singularity/LiouvilleBoundaryKernel.lean",
+      "sha256": "3113bd2850474934c06a67c3ebcaeefe01ef3e9ea472da0daaf4f9a40d2d7d13",
+      "imports": [
+        "Singularity.BoundaryCircle"
+      ]
+    },
+    {
+      "module": "Singularity.LiouvilleCurrent",
+      "file": "Singularity/LiouvilleCurrent.lean",
+      "sha256": "0d8604f59ddd4a0e0a15015309b76c4c1c2906f2337d0cb38f4d4b44b963ed94",
+      "imports": [
+        "Singularity.LiouvilleBoundaryKernel",
+        "Singularity.BoundaryPairInvariance"
+      ]
+    },
+    {
+      "module": "Singularity.LiouvilleFourier",
+      "file": "Singularity/LiouvilleFourier.lean",
+      "sha256": "8e35e997f94e87980332bc07cbb4ce6430149aa7b58a8334d7ae709c127bdce9",
+      "imports": [
+        "Singularity.GammaDensity"
+      ]
+    },
+    {
+      "module": "Singularity.LiouvilleFrameHaar",
+      "file": "Singularity/LiouvilleFrameHaar.lean",
+      "sha256": "26cd5fddeb28733b57d20f70810aab9d425e76679239afcbe169664cf01d24fa",
+      "imports": [
+        "Singularity.CurrentFrameLocalFiniteness",
+        "Singularity.FrameFiberHaar",
+        "Singularity.HomogeneousMeasureClass"
+      ]
+    },
+    {
+      "module": "Singularity.LiouvilleHaarMeasureClass",
+      "file": "Singularity/LiouvilleHaarMeasureClass.lean",
+      "sha256": "d27df3c8699de04d367220d52f0d7db35ce2bcecf487b17211a0558e9b6a10c0",
+      "imports": [
+        "Singularity.HomogeneousMeasureClass",
+        "Singularity.BoundaryActionMeasurable",
+        "Singularity.LiouvilleInvariance",
+        "Singularity.SLTwoHaar",
+        "Singularity.DilationNorthSouth"
+      ]
+    },
+    {
+      "module": "Singularity.LiouvilleInvariance",
+      "file": "Singularity/LiouvilleInvariance.lean",
+      "sha256": "e6d3f2ff86c7bc468053fabe5a19b1536fa9c3cd7d8285f58b73bb201b262be1",
+      "imports": [
+        "Singularity.LiouvilleMobius"
+      ]
+    },
+    {
+      "module": "Singularity.LiouvilleMobius",
+      "file": "Singularity/LiouvilleMobius.lean",
+      "sha256": "2773120a6262fbb2f20d2f145ce7ce59a277895310a74a26ff0cdd367bfd23e8",
+      "imports": [
+        "Singularity.LiouvilleTransformations"
+      ]
+    },
+    {
+      "module": "Singularity.LiouvilleOperator",
+      "file": "Singularity/LiouvilleOperator.lean",
+      "sha256": "3f1c3676009c35769bf096ad39ae1d6ffd2c15ca96c2dea242c095e086fa0f0c",
+      "imports": [
+        "Singularity.ConvolutionKernel",
+        "Singularity.LiouvilleFourier",
+        "Singularity.AnalysisKernel"
+      ]
+    },
+    {
+      "module": "Singularity.LiouvilleTransformations",
+      "file": "Singularity/LiouvilleTransformations.lean",
+      "sha256": "762c61b27aaeebbc4c4b3c24b75721e18cfaefc6cfaa22cf699a48d8b067f526",
+      "imports": [
+        "Singularity.LiouvilleCurrent"
+      ]
+    },
+    {
+      "module": "Singularity.LocalTransferIteration",
+      "file": "Singularity/LocalTransferIteration.lean",
+      "sha256": "42c5b768c772118c34dcc90ea1fd903af1c908f0a033b8f1ff51db6765bad992",
+      "imports": [
+        "Mathlib.Analysis.SpecialFunctions.Exp",
+        "Mathlib.Tactic"
+      ]
+    },
+    {
+      "module": "Singularity.LogBoundaryDensity",
+      "file": "Singularity/LogBoundaryDensity.lean",
+      "sha256": "ba931c861fe2f4a798f17d76259a4041dc6fd9145b7ed975aa47daa10c0b9f3f",
+      "imports": [
+        "Singularity.LogBoundaryMeasure",
+        "Singularity.PoissonAnalysis",
+        "Mathlib.MeasureTheory.Group.MeasurableEquiv"
+      ]
+    },
+    {
+      "module": "Singularity.LogBoundaryMeasure",
+      "file": "Singularity/LogBoundaryMeasure.lean",
+      "sha256": "8eff2ef75b636dfec1241d85d2ab2ea67dbd33e03b3dea7c6d09c8c2d8d92f18",
+      "imports": [
+        "Singularity.CurrentComparison",
+        "Singularity.LiouvilleFourier",
+        "Mathlib.MeasureTheory.Function.JacobianOneDim",
+        "Mathlib.Analysis.SpecialFunctions.ExpDeriv"
+      ]
+    },
+    {
+      "module": "Singularity.Markov",
+      "file": "Singularity/Markov.lean",
+      "sha256": "42a1826b9e69a6d16f81dfbe731aeb0895aae9671622fe942dffc254b84faaa7",
+      "imports": [
+        "Mathlib.MeasureTheory.Group.Measure",
+        "Mathlib.MeasureTheory.Function.L2Space",
+        "Mathlib.Analysis.Normed.Operator.Basic",
+        "Mathlib.Tactic.Positivity"
+      ]
+    },
+    {
+      "module": "Singularity.MarkovAdjoint",
+      "file": "Singularity/MarkovAdjoint.lean",
+      "sha256": "fff794d46c378e448313191749f1be84e9afc14cfd61e2f3306c836a50ed08af",
+      "imports": [
+        "Singularity.Markov",
+        "Mathlib.Analysis.InnerProductSpace.Adjoint"
+      ]
+    },
+    {
+      "module": "Singularity.MarkovEnergy",
+      "file": "Singularity/MarkovEnergy.lean",
+      "sha256": "3f9b0b2a0edb3b2d8ea8999a68ced64479cd910c275924ec85e0cd5b74c8251c",
+      "imports": [
+        "Singularity.CountingModulus",
+        "Singularity.QuadraticSpectralGap"
+      ]
+    },
+    {
+      "module": "Singularity.MartinAction",
+      "file": "Singularity/MartinAction.lean",
+      "sha256": "a7a66d4f84d4a866281f2ce131e3b8d612e9f9ace0c83b884f78d523321f5783",
+      "imports": [
+        "Singularity.MartinBoundary"
+      ]
+    },
+    {
+      "module": "Singularity.MartinApproximation",
+      "file": "Singularity/MartinApproximation.lean",
+      "sha256": "809023f373d526da2b495d6b54bc2a33d9b8e37ce2275ed271e808c45223023a",
+      "imports": [
+        "Singularity.MartinBoundary"
+      ]
+    },
+    {
+      "module": "Singularity.MartinBoundary",
+      "file": "Singularity/MartinBoundary.lean",
+      "sha256": "3ab7e2a467c198f22e6746b13ca8c64464f828b300dd91ffacc31b9c666f09b7",
+      "imports": [
+        "Singularity.MartinCompactness"
+      ]
+    },
+    {
+      "module": "Singularity.MartinCompactness",
+      "file": "Singularity/MartinCompactness.lean",
+      "sha256": "0518c9adfad2750e8581a6d67d5c21b33f659d3bca4b648841f73017015dc39f",
+      "imports": [
+        "Singularity.GreenHarnack",
+        "Singularity.ReflectedSupport",
+        "Mathlib.Topology.Sequences"
+      ]
+    },
+    {
+      "module": "Singularity.Mautner",
+      "file": "Singularity/Mautner.lean",
+      "sha256": "0d93d22a79220b22dd0f533242e7daea47ed3d18a5c66fe3737417606c2b7622",
+      "imports": [
+        "Mathlib.Topology.MetricSpace.IsometricSMul",
+        "Mathlib.GroupTheory.GroupAction.FixedPoints"
+      ]
+    },
+    {
+      "module": "Singularity.MautnerDomainAction",
+      "file": "Singularity/MautnerDomainAction.lean",
+      "sha256": "a54d90aaf5c03b325c9541f5bd37075b856c41bf376236ecdb0b69922612f714",
+      "imports": [
+        "Singularity.MautnerSLTwo",
+        "Mathlib.Topology.Algebra.Constructions.DomMulAct"
+      ]
+    },
+    {
+      "module": "Singularity.MautnerErgodicity",
+      "file": "Singularity/MautnerErgodicity.lean",
+      "sha256": "4fdebf46e5857016ea10edfb264d97453ccd0ec2074bbc1573ea0d621529e19e",
+      "imports": [
+        "Singularity.MautnerDomainAction",
+        "Mathlib.MeasureTheory.Function.LpSpace.DomAct.Continuous",
+        "Mathlib.Dynamics.Ergodic.Action.Basic"
+      ]
+    },
+    {
+      "module": "Singularity.MautnerSLTwo",
+      "file": "Singularity/MautnerSLTwo.lean",
+      "sha256": "0656546024db16086aae9cbaa7bb043f41fa6e657bb0089208bdba175a3e4b5d",
+      "imports": [
+        "Singularity.Mautner",
+        "Singularity.ShearContraction"
+      ]
+    },
+    {
+      "module": "Singularity.MaximalAtoms",
+      "file": "Singularity/MaximalAtoms.lean",
+      "sha256": "915a8cc18c27c807322daaf244059494f70a9699fb63ad033a83ef428180d32a",
+      "imports": [
+        "Mathlib.MeasureTheory.Measure.Typeclasses.Finite",
+        "Mathlib.MeasureTheory.Measure.Basic",
+        "Mathlib.MeasureTheory.Measure.Real",
+        "Mathlib.Topology.Algebra.InfiniteSum.ENNReal",
+        "Mathlib.Data.Set.Finite.Lemmas"
+      ]
+    },
+    {
+      "module": "Singularity.MeasurableKernel",
+      "file": "Singularity/MeasurableKernel.lean",
+      "sha256": "b704682a6fcacd619b20fc1a1106085b949c4febf064e10d867783044a02e9fd",
+      "imports": [
+        "Singularity.KernelProjection",
+        "Mathlib.LinearAlgebra.FiniteDimensional.Lemmas",
+        "Mathlib.MeasureTheory.Constructions.BorelSpace.Complex"
+      ]
+    },
+    {
+      "module": "Singularity.MeasurableTransversal",
+      "file": "Singularity/MeasurableTransversal.lean",
+      "sha256": "4bb55860d53959a6c953faa8f59d340e01e3f438249b4ec2a8aa9dd83baace6a",
+      "imports": [
+        "Mathlib.MeasureTheory.MeasurableSpace.Basic",
+        "Mathlib.Data.Finset.Lattice.Union"
+      ]
+    },
+    {
+      "module": "Singularity.MetricChains",
+      "file": "Singularity/MetricChains.lean",
+      "sha256": "6fe4b52f163e40a5f60257cb7880212e092f3db3c38dd11ce14495b7c94ea92f",
+      "imports": [
+        "Mathlib.Analysis.Complex.UpperHalfPlane.Metric",
+        "Mathlib.Algebra.Order.Floor.Ring",
+        "Mathlib.Tactic"
+      ]
+    },
+    {
+      "module": "Singularity.MobiusBoundaryAnalysis",
+      "file": "Singularity/MobiusBoundaryAnalysis.lean",
+      "sha256": "4a0ea103213f9cc64cfd46114961715ff8f6cfc1b960f53cdbf1cbe8facfb71a",
+      "imports": [
+        "Singularity.PoissonDomination"
+      ]
+    },
+    {
+      "module": "Singularity.MobiusMeasureAction",
+      "file": "Singularity/MobiusMeasureAction.lean",
+      "sha256": "47f1af697e446766ecb0aa72bc7d02209c3e9da19fb2c102428f7556c62a2785",
+      "imports": [
+        "Singularity.PoissonMobius"
+      ]
+    },
+    {
+      "module": "Singularity.MobiusOrbitDensity",
+      "file": "Singularity/MobiusOrbitDensity.lean",
+      "sha256": "aef35b76a962c4bda6a62c52d707035eac2905c7e59f81f978c3836efa377d40",
+      "imports": [
+        "Singularity.DilationOrbit",
+        "Singularity.DensityVector"
+      ]
+    },
+    {
+      "module": "Singularity.NaimAnconaBounds",
+      "file": "Singularity/NaimAnconaBounds.lean",
+      "sha256": "86b4f4f7e437f27de33a24e24cd600cfc036671e7340eda6a33a80e234b62e19",
+      "imports": [
+        "Singularity.CocompactExcessAncona",
+        "Singularity.NaimSubsequence"
+      ]
+    },
+    {
+      "module": "Singularity.NaimCovariance",
+      "file": "Singularity/NaimCovariance.lean",
+      "sha256": "2bb5fe675b80618b3fe559161904f66eb7c1db53d21b98967e17e43ab9730049",
+      "imports": [
+        "Singularity.NaimSubsequence",
+        "Singularity.MartinAction"
+      ]
+    },
+    {
+      "module": "Singularity.NaimCurrentRigidity",
+      "file": "Singularity/NaimCurrentRigidity.lean",
+      "sha256": "04cf3d9ffd7c75b816c6be11b3b54d6851946bb94f9d02291305f985a4387298",
+      "imports": [
+        "Singularity.GeometricNaimCurrent",
+        "Singularity.CocompactGreenComparison"
+      ]
+    },
+    {
+      "module": "Singularity.NaimOrbitPairing",
+      "file": "Singularity/NaimOrbitPairing.lean",
+      "sha256": "3bc79eb1024954f0582525217d840e22035ab840f87e8e1da79d9956edf1b6ec",
+      "imports": [
+        "Singularity.GeometricNaimKernel",
+        "Singularity.OrbitGreenBoundary"
+      ]
+    },
+    {
+      "module": "Singularity.NaimQuotientComparison",
+      "file": "Singularity/NaimQuotientComparison.lean",
+      "sha256": "8b7eb9f68d015d4d7fc5ad5d96c35ee7a9b96f1ee030924397a865613f54958a",
+      "imports": [
+        "Singularity.GeometricNaimQuotient",
+        "Singularity.CocompactHaarAverages"
+      ]
+    },
+    {
+      "module": "Singularity.NaimSubsequence",
+      "file": "Singularity/NaimSubsequence.lean",
+      "sha256": "17a91ce94a8534283b1ffea6883f541b49f5b6ec09881818cfce14cb7900bb9c",
+      "imports": [
+        "Singularity.ReflectedMartin",
+        "Singularity.OrbitGreenBoundary"
+      ]
+    },
+    {
+      "module": "Singularity.NonamenableHittingLaw",
+      "file": "Singularity/NonamenableHittingLaw.lean",
+      "sha256": "d863dea95706e3d37cf5b90e466072b7944a050b7140bb38c50206518b9aaf37",
+      "imports": [
+        "Singularity.InvariantMean",
+        "Singularity.GeometricHittingMeasure"
+      ]
+    },
+    {
+      "module": "Singularity.NormalizedHittingLaw",
+      "file": "Singularity/NormalizedHittingLaw.lean",
+      "sha256": "c24450bf813151ab471bbfafa2c13e7b10fff78172e79725acb0c23d4a968bdb",
+      "imports": [
+        "Singularity.HittingConjugacy",
+        "Singularity.WalkIsomorphism"
+      ]
+    },
+    {
+      "module": "Singularity.NormalizedTwoSidedSingularity",
+      "file": "Singularity/NormalizedTwoSidedSingularity.lean",
+      "sha256": "8d24569e77154bb2b75820fdcd4329a103fe215e4060e27350021e9c3db03eac",
+      "imports": [
+        "Singularity.HittingDensityPairing",
+        "Singularity.NaimCurrentRigidity",
+        "Singularity.CurrentFactorization"
+      ]
+    },
+    {
+      "module": "Singularity.NorthSouthConjugate",
+      "file": "Singularity/NorthSouthConjugate.lean",
+      "sha256": "f0587758897cbf43a653bcdc80e475d8e4afff2b4e5fec80c48b0c13ecc1c2b0",
+      "imports": [
+        "Singularity.NorthSouthPingPong",
+        "Mathlib.Topology.Algebra.MulAction"
+      ]
+    },
+    {
+      "module": "Singularity.NorthSouthNonamenable",
+      "file": "Singularity/NorthSouthNonamenable.lean",
+      "sha256": "ae9f1e4069ad294667c5073ae07b650a0725191e443064991c5042b2e0ef48fe",
+      "imports": [
+        "Singularity.NorthSouthConjugate",
+        "Singularity.FiniteOrbitDisplacement"
+      ]
+    },
+    {
+      "module": "Singularity.NorthSouthPingPong",
+      "file": "Singularity/NorthSouthPingPong.lean",
+      "sha256": "5292ee57001000e694ab393e64208cfd080c96265b6568ce95061e5bd3cf59b0",
+      "imports": [
+        "Singularity.FreeGroupNonamenable",
+        "Mathlib.GroupTheory.CoprodI",
+        "Mathlib.Topology.Separation.Hausdorff"
+      ]
+    },
+    {
+      "module": "Singularity.OneSidedNaimRigidity",
+      "file": "Singularity/OneSidedNaimRigidity.lean",
+      "sha256": "897fa05a9e42b558ff25b7335e3c2188ec8a0b2f2a26dad0ddf235dfd878ac2e",
+      "imports": [
+        "Singularity.StableFrameMeasureTransfer",
+        "Singularity.NaimQuotientComparison",
+        "Singularity.CocompactStableAverages"
+      ]
+    },
+    {
+      "module": "Singularity.Operators",
+      "file": "Singularity/Operators.lean",
+      "sha256": "af131b711d8d7e0dd4745d5001ad4e98fa1816984dc9c88c7afbb859fc4560bd",
+      "imports": [
+        "Mathlib.Analysis.InnerProductSpace.Adjoint",
+        "Mathlib.Analysis.InnerProductSpace.LaxMilgram",
+        "Mathlib.Tactic.Linarith",
+        "Mathlib.Tactic.Positivity"
+      ]
+    },
+    {
+      "module": "Singularity.OrbitGreenBoundary",
+      "file": "Singularity/OrbitGreenBoundary.lean",
+      "sha256": "a8d37290b9f2cee837b0d11b322d0451f699c14227513d1c870dc290bf4bdd62",
+      "imports": [
+        "Singularity.SupportedCoordinates",
+        "Singularity.CyclicOrbits",
+        "Singularity.GreenBoundary",
+        "Singularity.ExponentialLattice",
+        "Mathlib.Topology.Algebra.InfiniteSum.Real"
+      ]
+    },
+    {
+      "module": "Singularity.PeriodicStrip",
+      "file": "Singularity/PeriodicStrip.lean",
+      "sha256": "a3c7431678651f9c0c49dea548a5dcdcd5141b6ddc7537851ded3307ce9cab4e",
+      "imports": [
+        "Singularity.DilationGeometry",
+        "Mathlib.Analysis.Complex.UpperHalfPlane.ProperAction"
+      ]
+    },
+    {
+      "module": "Singularity.PoissonAnalysis",
+      "file": "Singularity/PoissonAnalysis.lean",
+      "sha256": "98ef39a3aa08de1a8c39a26940ec81d92a3ffc900196e15410dd50a68828db73",
+      "imports": [
+        "Singularity.PoissonDecay",
+        "Singularity.AnalysisKernel"
+      ]
+    },
+    {
+      "module": "Singularity.PoissonDecay",
+      "file": "Singularity/PoissonDecay.lean",
+      "sha256": "e402f58fe875385f4ed51837fee31aa8cab1f568b1ec60a817ffc0ab7a946725",
+      "imports": [
+        "Singularity.ExponentialLattice",
+        "Mathlib.Analysis.SpecialFunctions.ImproperIntegrals"
+      ]
+    },
+    {
+      "module": "Singularity.PoissonDomination",
+      "file": "Singularity/PoissonDomination.lean",
+      "sha256": "799b989b61e261f80d235feac723b5cac99cf057d97b8d90369588d087c36e19",
+      "imports": [
+        "Singularity.PoissonMobius",
+        "Singularity.BoundaryMeasureAnalysis"
+      ]
+    },
+    {
+      "module": "Singularity.PoissonDominationDecay",
+      "file": "Singularity/PoissonDominationDecay.lean",
+      "sha256": "a662e9cef384ea239b042e7516c0bbeca48ffdd59d453214c9a27c898fdb6b93",
+      "imports": [
+        "Singularity.FiniteBoundaryChart",
+        "Singularity.VisualPoissonRay",
+        "Mathlib.MeasureTheory.Measure.OpenPos"
+      ]
+    },
+    {
+      "module": "Singularity.PoissonInversion",
+      "file": "Singularity/PoissonInversion.lean",
+      "sha256": "6889181d45b2c7668aede066d752b176ed0f3591583be4be012b3095e13534fd",
+      "imports": [
+        "Singularity.PoissonMeasure"
+      ]
+    },
+    {
+      "module": "Singularity.PoissonMeasure",
+      "file": "Singularity/PoissonMeasure.lean",
+      "sha256": "16c06ef335b2b8817bbe26547cac4d63c2cc535f6befc172ab4fc14ac793a507",
+      "imports": [
+        "Singularity.LogBoundaryDensity",
+        "Mathlib.Probability.Distributions.Cauchy",
+        "Mathlib.Analysis.Complex.UpperHalfPlane.Basic"
+      ]
+    },
+    {
+      "module": "Singularity.PoissonMobius",
+      "file": "Singularity/PoissonMobius.lean",
+      "sha256": "0f905d3f20224a6faa24a500af19c38e944c3603b9a9757ea26c613db2b018dd",
+      "imports": [
+        "Singularity.PoissonInversion",
+        "Mathlib.Analysis.Complex.UpperHalfPlane.MoebiusAction"
+      ]
+    },
+    {
+      "module": "Singularity.ProjectiveActions",
+      "file": "Singularity/ProjectiveActions.lean",
+      "sha256": "d77702e7974a512978823a9244df6a5b330f3ba768921dc65a28b7bf5554854f",
+      "imports": [
+        "Singularity.SLTwoProjective",
+        "Singularity.SLTwoHaar"
+      ]
+    },
+    {
+      "module": "Singularity.ProjectiveCocompactSingularity",
+      "file": "Singularity/ProjectiveCocompactSingularity.lean",
+      "sha256": "1c8a5db6f40ca4693e715eabb336203909e8c92362ccc8223d101909b4460bfb",
+      "imports": [
+        "Singularity.ProjectiveHittingMeasure",
+        "Singularity.CocompactHittingSingularity"
+      ]
+    },
+    {
+      "module": "Singularity.ProjectiveHittingMeasure",
+      "file": "Singularity/ProjectiveHittingMeasure.lean",
+      "sha256": "329b055b77fbbd001281d22dedecd758c867165a2399390c07ef0ab7d21900e1",
+      "imports": [
+        "Singularity.ProjectiveWalkProjection",
+        "Singularity.GeometricHittingMeasure",
+        "Mathlib.MeasureTheory.Constructions.Polish.StronglyMeasurable"
+      ]
+    },
+    {
+      "module": "Singularity.ProjectiveInversion",
+      "file": "Singularity/ProjectiveInversion.lean",
+      "sha256": "dc095735cdf0de1828ec420c9594813236b7f57abc33624caf97e078b734d3b1",
+      "imports": [
+        "Mathlib.Topology.Compactification.OnePoint.ProjectiveLine",
+        "Mathlib.Analysis.Normed.Field.Lemmas",
+        "Mathlib.Topology.Algebra.GroupWithZero"
+      ]
+    },
+    {
+      "module": "Singularity.ProjectiveLiftSupport",
+      "file": "Singularity/ProjectiveLiftSupport.lean",
+      "sha256": "d1e76ab5732fa5caaf76a74a37f18158cb750d71d28e6edd3d58b8b24148900d",
+      "imports": [
+        "Singularity.ProjectiveSubgroupLift",
+        "Singularity.InvolutiveKernelGeneration"
+      ]
+    },
+    {
+      "module": "Singularity.ProjectiveMobius",
+      "file": "Singularity/ProjectiveMobius.lean",
+      "sha256": "d89676c73cf9b280f0d0d1c7f80562a16d5a55c27d48318e94e3d9b40e7c2a0b",
+      "imports": [
+        "Singularity.ProjectiveInversion"
+      ]
+    },
+    {
+      "module": "Singularity.ProjectiveNonelementary",
+      "file": "Singularity/ProjectiveNonelementary.lean",
+      "sha256": "b24168a9c05fa00d63cb9625a5712df041e3f87cb59d5d6eee4f47e495650350",
+      "imports": [
+        "Singularity.ProjectiveActions",
+        "Mathlib.Algebra.Group.Action.Sum"
+      ]
+    },
+    {
+      "module": "Singularity.ProjectiveSubgroupLift",
+      "file": "Singularity/ProjectiveSubgroupLift.lean",
+      "sha256": "aa643101db31b687441a99e7aab5fc4c7c38f077325a653f7ed8456a58bacbc0",
+      "imports": [
+        "Singularity.ProjectiveActions",
+        "Mathlib.Topology.Algebra.Group.Basic"
+      ]
+    },
+    {
+      "module": "Singularity.ProjectiveWalkProjection",
+      "file": "Singularity/ProjectiveWalkProjection.lean",
+      "sha256": "25afac3720a10b2cfe9281743ab69933670df162c105cac8e8c0ed07abaf92f9",
+      "imports": [
+        "Singularity.ProjectiveLiftSupport",
+        "Singularity.WalkTransport"
+      ]
+    },
+    {
+      "module": "Singularity.QuadraticSpectralGap",
+      "file": "Singularity/QuadraticSpectralGap.lean",
+      "sha256": "5a44033cbe04a0c8cadfb0f571fd53c5f3e4cc6861434823548b61636a27437b",
+      "imports": [
+        "Singularity.Operators",
+        "Mathlib.Analysis.Normed.Algebra.Spectrum",
+        "Mathlib.Analysis.Normed.Operator.Banach"
+      ]
+    },
+    {
+      "module": "Singularity.QuotientDilationErgodicity",
+      "file": "Singularity/QuotientDilationErgodicity.lean",
+      "sha256": "303f5f679a55787d3342411a7708685c6095396d1f40fd5d95cc75ba27cfacb0",
+      "imports": [
+        "Singularity.MautnerErgodicity",
+        "Singularity.QuotientErgodicity",
+        "Singularity.SLTwoHaar",
+        "Mathlib.Topology.Algebra.ProperAction.Basic",
+        "Mathlib.Topology.Algebra.IsUniformGroup.DiscreteSubgroup"
+      ]
+    },
+    {
+      "module": "Singularity.QuotientErgodicity",
+      "file": "Singularity/QuotientErgodicity.lean",
+      "sha256": "9dd299aad22c9b5ef549fbedc78fb824f52e98d99c57e1c75dad37f7c4f0933f",
+      "imports": [
+        "Mathlib.Dynamics.Ergodic.Action.Regular",
+        "Mathlib.MeasureTheory.Measure.Haar.Quotient"
+      ]
+    },
+    {
+      "module": "Singularity.QuotientFlowDuality",
+      "file": "Singularity/QuotientFlowDuality.lean",
+      "sha256": "c6a64042aefb4471bfa1f71d5ccffe1c7530452a16c316282b3a282c1e97d1dc",
+      "imports": [
+        "Singularity.InvariantSetDescent",
+        "Singularity.QuotientErgodicity"
+      ]
+    },
+    {
+      "module": "Singularity.RadialCayleySeparation",
+      "file": "Singularity/RadialCayleySeparation.lean",
+      "sha256": "27be83a1782ae378b1896d5b7002f8a30e192c05237cd3f017bb25e265f8f28d",
+      "imports": [
+        "Singularity.RadialCoordinate",
+        "Singularity.CayleyExcess",
+        "Singularity.AxisBallSeparation"
+      ]
+    },
+    {
+      "module": "Singularity.RadialCoordinate",
+      "file": "Singularity/RadialCoordinate.lean",
+      "sha256": "71a0c3eb7a33f5cd3c877bed868f12acc5ebc57d8018b971ad906f9ed23b2fc9",
+      "imports": [
+        "Singularity.VisualPoissonRay",
+        "Singularity.GeometricStrip"
+      ]
+    },
+    {
+      "module": "Singularity.RadialGreenComparison",
+      "file": "Singularity/RadialGreenComparison.lean",
+      "sha256": "a23c74880e196e177d2b137eb0c332da99bcf81c38d5c90a97480cd2018847ad",
+      "imports": [
+        "Singularity.RadialCayleySeparation",
+        "Singularity.CocompactExcessAncona"
+      ]
+    },
+    {
+      "module": "Singularity.RayMartinBounds",
+      "file": "Singularity/RayMartinBounds.lean",
+      "sha256": "c8c7e0ee2600f8670acca89dc724d5c710c0a9307b3170eb9ccb286943e452a0",
+      "imports": [
+        "Singularity.CocompactExcessAncona",
+        "Singularity.CocompactRayApproximation",
+        "Singularity.MartinCompactness",
+        "Singularity.GreenVanishing"
+      ]
+    },
+    {
+      "module": "Singularity.RayMartinClusters",
+      "file": "Singularity/RayMartinClusters.lean",
+      "sha256": "41ee679956bce15ccd17da3912a7f3c062d7d680c9dc198eeb0e31a19712e69c",
+      "imports": [
+        "Singularity.RayMartinSeparation",
+        "Singularity.MartinApproximation"
+      ]
+    },
+    {
+      "module": "Singularity.RayMartinConvergence",
+      "file": "Singularity/RayMartinConvergence.lean",
+      "sha256": "b79d464bd36fe90ea8785400315067aed0ea0f9bb8e3ccc18edadef4ed2fd165",
+      "imports": [
+        "Singularity.RayMartinUniqueness"
+      ]
+    },
+    {
+      "module": "Singularity.RayMartinMinimality",
+      "file": "Singularity/RayMartinMinimality.lean",
+      "sha256": "e4ce1308dabf65095808410dd9084b3e162cf501d6e531d8f430c781e1e0f490",
+      "imports": [
+        "Singularity.RayTailExcess",
+        "Singularity.RayMartinClusters",
+        "Singularity.HarmonicMinimality"
+      ]
+    },
+    {
+      "module": "Singularity.RayMartinSeparation",
+      "file": "Singularity/RayMartinSeparation.lean",
+      "sha256": "e0eda24e48aee82a8bf9d6109910c968a5c4999d35db3b5f193735d95515db9f",
+      "imports": [
+        "Singularity.RayMartinBounds",
+        "Singularity.NaimAnconaBounds",
+        "Singularity.CayleyRealBoundary"
+      ]
+    },
+    {
+      "module": "Singularity.RayMartinUniqueness",
+      "file": "Singularity/RayMartinUniqueness.lean",
+      "sha256": "b653c7543bdbfff6be6abc35f363b3b2316436387e6bdccc3cadd0ffe175c364",
+      "imports": [
+        "Singularity.RayMartinMinimality"
+      ]
+    },
+    {
+      "module": "Singularity.RayTailExcess",
+      "file": "Singularity/RayTailExcess.lean",
+      "sha256": "259ffe6f1f76a82de193c989aefb58aad2dd91bbdeef36a06b77ecc068e610d2",
+      "imports": [
+        "Singularity.RayMartinBounds"
+      ]
+    },
+    {
+      "module": "Singularity.RealBoundaryTransport",
+      "file": "Singularity/RealBoundaryTransport.lean",
+      "sha256": "049df96ce84fb953e9d0ac8a09c0b555645210eea73bdba78f56e99d867508da",
+      "imports": [
+        "Singularity.CompactBoundary",
+        "Mathlib.MeasureTheory.MeasurableSpace.Embedding"
+      ]
+    },
+    {
+      "module": "Singularity.RealCurrentChart",
+      "file": "Singularity/RealCurrentChart.lean",
+      "sha256": "ae98bb0673e3ca0a3aee740b1033e50a37b7d0f5caaecae9bff7d5d0d3d912d5",
+      "imports": [
+        "Singularity.BoundaryCurrentDensity",
+        "Singularity.FiniteBoundaryChart"
+      ]
+    },
+    {
+      "module": "Singularity.RealGeometricHittingLaw",
+      "file": "Singularity/RealGeometricHittingLaw.lean",
+      "sha256": "bf21deff3b7f777781bf55f9e2808ff67ef0f3a48a820ff4b62b7c5adec23dce",
+      "imports": [
+        "Singularity.RealBoundaryTransport",
+        "Singularity.FuchsianWalkConvergence"
+      ]
+    },
+    {
+      "module": "Singularity.RealHittingMartinDensity",
+      "file": "Singularity/RealHittingMartinDensity.lean",
+      "sha256": "ac42de7a0bd01263368c10603dd10cfd800330fd577199f47b5e06e550f794fc",
+      "imports": [
+        "Singularity.HittingMartinIdentification",
+        "Singularity.FiniteBoundaryChart"
+      ]
+    },
+    {
+      "module": "Singularity.ReflectedHittingTransport",
+      "file": "Singularity/ReflectedHittingTransport.lean",
+      "sha256": "c91cb5497bb54a0c696b26522effc51f09a751936a8063d3accaeb4c4e78bc34",
+      "imports": [
+        "Singularity.HittingConjugacy",
+        "Singularity.GeometricKernelCurrent"
+      ]
+    },
+    {
+      "module": "Singularity.ReflectedMartin",
+      "file": "Singularity/ReflectedMartin.lean",
+      "sha256": "600d2449967a3174718d94e1fec317e3682165f9d1d29b92d580927dc286689b",
+      "imports": [
+        "Singularity.MartinCompactness"
+      ]
+    },
+    {
+      "module": "Singularity.ReflectedSupport",
+      "file": "Singularity/ReflectedSupport.lean",
+      "sha256": "1784108b5a32cfba9d0cca9c8f86e904049aa5fd2c919cfa2da22ec2ceb8e162",
+      "imports": [
+        "Singularity.GreenPositive",
+        "Singularity.GreenAdjoint"
+      ]
+    },
+    {
+      "module": "Singularity.SLTwoHaar",
+      "file": "Singularity/SLTwoHaar.lean",
+      "sha256": "1a79d41c885208dc4f1d3a125c2e6fcef680493291a717384a394f87052b4ba3",
+      "imports": [
+        "Singularity.ShearContraction",
+        "Mathlib.MeasureTheory.Group.ModularCharacter",
+        "Mathlib.GroupTheory.Abelianization.Defs"
+      ]
+    },
+    {
+      "module": "Singularity.SLTwoProjective",
+      "file": "Singularity/SLTwoProjective.lean",
+      "sha256": "8640429bb9a01f288c652c197a97f4ab8a9b9d934d07a360a107d21345ca12b0",
+      "imports": [
+        "Singularity.BoundaryPairTransitivity",
+        "Mathlib.LinearAlgebra.Matrix.ProjectiveSpecialLinearGroup",
+        "Mathlib.Topology.Algebra.Group.Quotient"
+      ]
+    },
+    {
+      "module": "Singularity.ShearContraction",
+      "file": "Singularity/ShearContraction.lean",
+      "sha256": "e19b46b1d20ecdb48b27355a0a959e46433cf95ea063ee5c66077ea48f7a893f",
+      "imports": [
+        "Singularity.HyperbolicTraceNormalization",
+        "Mathlib.Topology.Algebra.Group.Matrix"
+      ]
+    },
+    {
+      "module": "Singularity.ShrinkingAxisGeometry",
+      "file": "Singularity/ShrinkingAxisGeometry.lean",
+      "sha256": "de44193d73eaacba816f724bba2bf3e31a5050fecd9297a2bd0e1e206d7093d4",
+      "imports": [
+        "Singularity.AxisBallGeometry",
+        "Singularity.ShrinkingAxisInterval"
+      ]
+    },
+    {
+      "module": "Singularity.ShrinkingAxisInterval",
+      "file": "Singularity/ShrinkingAxisInterval.lean",
+      "sha256": "c454a924d7d9bb0029f851914f6eab50ad9344f28eec16ce7881984419bb6f75",
+      "imports": [
+        "Mathlib.Analysis.SpecificLimits.Basic",
+        "Mathlib.Tactic"
+      ]
+    },
+    {
+      "module": "Singularity.SmallRowHyperbolic",
+      "file": "Singularity/SmallRowHyperbolic.lean",
+      "sha256": "2e2ce0347e5e24b82c7e8bb45b9da310b40f8753cb348f05947eed7d7e3be98c",
+      "imports": [
+        "Singularity.HyperbolicTraceSquare",
+        "Mathlib.Analysis.SpecificLimits.Basic"
+      ]
+    },
+    {
+      "module": "Singularity.SpectralEscape",
+      "file": "Singularity/SpectralEscape.lean",
+      "sha256": "80d2911e9355cd24ce501ae13f8bda173bc2222d4d89701cd7254187f457408a",
+      "imports": [
+        "Singularity.InfiniteWalkProcess"
+      ]
+    },
+    {
+      "module": "Singularity.StableBoundaryProduct",
+      "file": "Singularity/StableBoundaryProduct.lean",
+      "sha256": "d0a92120f85066eea0bf8e3e9efab4040de4d7c3fecfa42485cb0f1ffef4ba5b",
+      "imports": [
+        "Singularity.BoundaryPairInvariance",
+        "Singularity.StableCesaro"
+      ]
+    },
+    {
+      "module": "Singularity.StableCesaro",
+      "file": "Singularity/StableCesaro.lean",
+      "sha256": "ef4462b1efdef7cb00dcbf88d60b7c440743dfab0f75e6280ef45b6ce1a7dd06",
+      "imports": [
+        "Mathlib.Dynamics.BirkhoffSum.NormedSpace",
+        "Mathlib.Analysis.Asymptotics.SpecificAsymptotics",
+        "Mathlib.MeasureTheory.Measure.Prod",
+        "Mathlib.MeasureTheory.Constructions.BorelSpace.Metric"
+      ]
+    },
+    {
+      "module": "Singularity.StableFrameMeasureTransfer",
+      "file": "Singularity/StableFrameMeasureTransfer.lean",
+      "sha256": "b3c63a9dd0e4f4b6907f388cf1bdb2fc43d4909c5b9f67fc31d2c748d6f0d891",
+      "imports": [
+        "Singularity.StableFrameSection",
+        "Singularity.StableBoundaryProduct",
+        "Singularity.LiouvilleFrameHaar"
+      ]
+    },
+    {
+      "module": "Singularity.StableFrameSection",
+      "file": "Singularity/StableFrameSection.lean",
+      "sha256": "4ba358e8fddc5e06844a5b25131d406770860c97039924851317a416eb5db3cc",
+      "imports": [
+        "Singularity.CurrentFrameLift",
+        "Singularity.ShearContraction"
+      ]
+    },
+    {
+      "module": "Singularity.StationaryAtoms",
+      "file": "Singularity/StationaryAtoms.lean",
+      "sha256": "b1bc8473510f74a93224424e1cde2d7d55988ae7ad18f6abd8ddb777a37dfd41",
+      "imports": [
+        "Singularity.MaximalAtoms",
+        "Singularity.StationaryQuasiInvariant",
+        "Mathlib.MeasureTheory.Measure.Typeclasses.NullSingletonClass"
+      ]
+    },
+    {
+      "module": "Singularity.StationaryCurrent",
+      "file": "Singularity/StationaryCurrent.lean",
+      "sha256": "b1a2d26f7a268af18a73551f416e9b28197c55e6d19931fc2302c2fc255d1a01",
+      "imports": [
+        "Singularity.WeightedCurrent",
+        "Singularity.StationaryDensity"
+      ]
+    },
+    {
+      "module": "Singularity.StationaryDensity",
+      "file": "Singularity/StationaryDensity.lean",
+      "sha256": "08e5af4f909330d33a72e4aada88d751f5e1813fc1d0bc3952a199f9d0286437",
+      "imports": [
+        "Singularity.StationaryQuasiInvariant",
+        "Singularity.ReflectedSupport",
+        "Mathlib.MeasureTheory.Measure.Decomposition.RadonNikodym",
+        "Mathlib.MeasureTheory.Group.MeasurableEquiv"
+      ]
+    },
+    {
+      "module": "Singularity.StationaryQuasiInvariant",
+      "file": "Singularity/StationaryQuasiInvariant.lean",
+      "sha256": "d103f0f601728504ea57ea37338efb413130ec44a6f406385cb3090230de1a47",
+      "imports": [
+        "Singularity.WalkBoundaryLaw",
+        "Singularity.GreenPositive",
+        "Mathlib.MeasureTheory.Measure.AbsolutelyContinuous"
+      ]
+    },
+    {
+      "module": "Singularity.StripBoundarySeparation",
+      "file": "Singularity/StripBoundarySeparation.lean",
+      "sha256": "3a9b4e5e3d3ec52244ff2da360eb41ac709aaf107f9e40ea59b18db16479984a",
+      "imports": [
+        "Singularity.CayleyRealBoundary",
+        "Singularity.PeriodicStrip"
+      ]
+    },
+    {
+      "module": "Singularity.StripGreenDomination",
+      "file": "Singularity/StripGreenDomination.lean",
+      "sha256": "771abd07ab3ba76610a8134a8b45744483748c6bacc72a5fff36fbda748649ca",
+      "imports": [
+        "Singularity.StripBoundarySeparation",
+        "Singularity.CocompactExcessAncona",
+        "Singularity.GeometricStrip",
+        "Singularity.GreenVanishing"
+      ]
+    },
+    {
+      "module": "Singularity.StripMartinVectors",
+      "file": "Singularity/StripMartinVectors.lean",
+      "sha256": "16013c1ac9d6a34218f162baed6bcfb611ee7b54956d043c3994da562f4f90d8",
+      "imports": [
+        "Singularity.StripGreenDomination",
+        "Singularity.GeometricMartinConvergence",
+        "Singularity.RayMartinConvergence",
+        "Singularity.GreenBoundary"
+      ]
+    },
+    {
+      "module": "Singularity.StripNaimKernel",
+      "file": "Singularity/StripNaimKernel.lean",
+      "sha256": "029f5bbe8c235c4bfdbe12cddc450002bff74a2c873d6620a3e2365eafaced88",
+      "imports": [
+        "Singularity.StripMartinVectors",
+        "Singularity.NaimAnconaBounds"
+      ]
+    },
+    {
+      "module": "Singularity.StripOrbits",
+      "file": "Singularity/StripOrbits.lean",
+      "sha256": "70d51669762927ae8c7e43726ebc97b65d5bc66211d5a929e8e42dc29f71f993",
+      "imports": [
+        "Singularity.PeriodicStrip",
+        "Mathlib.Data.Fintype.EquivFin"
+      ]
+    },
+    {
+      "module": "Singularity.StripSeparation",
+      "file": "Singularity/StripSeparation.lean",
+      "sha256": "c415f6fb251c12711615f459df9e1c4d6f483a5038cd0e080a97654133391a73",
+      "imports": [
+        "Singularity.PeriodicStrip",
+        "Singularity.GreenSeparator"
+      ]
+    },
+    {
+      "module": "Singularity.SupportedCoordinates",
+      "file": "Singularity/SupportedCoordinates.lean",
+      "sha256": "3057735f78669b40ee5fcbb21b827443f8118a22ca345944a98f368bf86c4bd9",
+      "imports": [
+        "Singularity.CountingSequence"
+      ]
+    },
+    {
+      "module": "Singularity.SupportedL2",
+      "file": "Singularity/SupportedL2.lean",
+      "sha256": "0292214d211eec3826cb9360b9d14a3f3dbb5675070eb8de76be04cbc89e1e63",
+      "imports": [
+        "Singularity.CountingL2",
+        "Singularity.Operators"
+      ]
+    },
+    {
+      "module": "Singularity.TraceNonamenable",
+      "file": "Singularity/TraceNonamenable.lean",
+      "sha256": "cf37ae4e5f8ec62d66929bded2e8383a439bbfc3026b231667853f82d9ab596a",
+      "imports": [
+        "Singularity.HyperbolicTraceSquare",
+        "Singularity.HyperbolicNonamenable"
+      ]
+    },
+    {
+      "module": "Singularity.TranslatedAnalysis",
+      "file": "Singularity/TranslatedAnalysis.lean",
+      "sha256": "f4bc9282dec07a5c54bfd4e35eea3a72c05c101349b3afdba903d3d376c8d086",
+      "imports": [
+        "Singularity.AnalysisOperator",
+        "Singularity.ExponentialLattice",
+        "Mathlib.MeasureTheory.Group.Integral",
+        "Mathlib.MeasureTheory.Measure.Lebesgue.Basic"
+      ]
+    },
+    {
+      "module": "Singularity.TransverseMartinVectors",
+      "file": "Singularity/TransverseMartinVectors.lean",
+      "sha256": "90b2b906be69532a1eceecd08dfe5850ba7758f2a645764bd8a9aaff0cd1ca5b",
+      "imports": [
+        "Singularity.TransverseStrip",
+        "Singularity.GeometricMartinConvergence",
+        "Singularity.RayMartinConvergence",
+        "Singularity.GreenBoundary"
+      ]
+    },
+    {
+      "module": "Singularity.TransverseStrip",
+      "file": "Singularity/TransverseStrip.lean",
+      "sha256": "95937085b271982aadc9bd5887589ef2bbe3848dfa7b279e45b516f1b4a7a909",
+      "imports": [
+        "Singularity.StripGreenDomination",
+        "Singularity.CompactMartinMap",
+        "Singularity.BoundaryPairTransitivity"
+      ]
+    },
+    {
+      "module": "Singularity.VisualPoissonComparison",
+      "file": "Singularity/VisualPoissonComparison.lean",
+      "sha256": "adfc139b85e9cb7c2d0c0c48356881ddfaeec45029e86f0a08911ebd176b0139",
+      "imports": [
+        "Singularity.PoissonDominationDecay"
+      ]
+    },
+    {
+      "module": "Singularity.VisualPoissonDecay",
+      "file": "Singularity/VisualPoissonDecay.lean",
+      "sha256": "ea9eca5bcf60e79bbf80a3e11beee48b67c1d72b4443d888360d86b4f6823d2e",
+      "imports": [
+        "Singularity.VisualPoissonRay",
+        "Singularity.OrbitGreenBoundary"
+      ]
+    },
+    {
+      "module": "Singularity.VisualPoissonRay",
+      "file": "Singularity/VisualPoissonRay.lean",
+      "sha256": "7c2e1a4f6b3e9cf28a076ec31a2cbf341f1b2d4efe34bbfdff02d2eeef2ea395",
+      "imports": [
+        "Singularity.DilationGeometry"
+      ]
+    },
+    {
+      "module": "Singularity.WalkBoundaryErgodicity",
+      "file": "Singularity/WalkBoundaryErgodicity.lean",
+      "sha256": "1d5d078071c541fa19355fdc1c87ec6d3efbdf9c17feeaa816cccabcaffe5903",
+      "imports": [
+        "Singularity.IndependentShift",
+        "Singularity.WalkBoundaryLaw"
+      ]
+    },
+    {
+      "module": "Singularity.WalkBoundaryLaw",
+      "file": "Singularity/WalkBoundaryLaw.lean",
+      "sha256": "6bd130c01568ad11236eded79716d8f6a5ce97237abccff3be7ec5cac3b601bc",
+      "imports": [
+        "Singularity.WalkBoundaryLimit"
+      ]
+    },
+    {
+      "module": "Singularity.WalkBoundaryLimit",
+      "file": "Singularity/WalkBoundaryLimit.lean",
+      "sha256": "44c46822259cd63b5b88c63489e73cdd94bbddfccc666836c6f03e9147c241e2",
+      "imports": [
+        "Singularity.WalkHeadTail",
+        "Mathlib.Topology.Algebra.MulAction"
+      ]
+    },
+    {
+      "module": "Singularity.WalkHeadTail",
+      "file": "Singularity/WalkHeadTail.lean",
+      "sha256": "46391cb2ea7aebd8a70038bdafe6c1a454f07639974601a3c75317d6f68fb334",
+      "imports": [
+        "Singularity.InfiniteWalkProcess",
+        "Mathlib.Probability.Independence.Process.Basic",
+        "Mathlib.MeasureTheory.Integral.Lebesgue.Countable"
+      ]
+    },
+    {
+      "module": "Singularity.WalkIsomorphism",
+      "file": "Singularity/WalkIsomorphism.lean",
+      "sha256": "3ab876e6cb8b0d21a0153a9a7ec54e6e77f312c5e3e803201f156a31a504f87c",
+      "imports": [
+        "Singularity.WalkTransport",
+        "Singularity.InvariantMeanTransport"
+      ]
+    },
+    {
+      "module": "Singularity.WalkKernel",
+      "file": "Singularity/WalkKernel.lean",
+      "sha256": "dbde5d5838dfef50e473831f34bfdda4590698515cbbc127ef41a9804de17f47",
+      "imports": [
+        "Singularity.CountingL2",
+        "Singularity.GreenSeries",
+        "Mathlib.Algebra.BigOperators.Group.Finset.Piecewise"
+      ]
+    },
+    {
+      "module": "Singularity.WalkLastExit",
+      "file": "Singularity/WalkLastExit.lean",
+      "sha256": "deea17c77c6ed05507ad45d349c66171c03631f279cf33b79a9ed70fce97bf12",
+      "imports": [
+        "Singularity.WalkPrefixTail",
+        "Singularity.InfiniteFirstEntrance"
+      ]
+    },
+    {
+      "module": "Singularity.WalkLimitConstruction",
+      "file": "Singularity/WalkLimitConstruction.lean",
+      "sha256": "cb3aac0bf9c83b8c21bbbd1877db9d30e61bd6261aa24e32d5f6d1af19b37b99",
+      "imports": [
+        "Singularity.StationaryQuasiInvariant",
+        "Mathlib.MeasureTheory.Constructions.BorelSpace.Metrizable"
+      ]
+    },
+    {
+      "module": "Singularity.WalkPrefixTail",
+      "file": "Singularity/WalkPrefixTail.lean",
+      "sha256": "7c89c22fc56fd193f0339c4c0ae525ec19ecca571c5d365950597080d4192b3d",
+      "imports": [
+        "Singularity.WalkBoundaryLimit"
+      ]
+    },
+    {
+      "module": "Singularity.WalkTransport",
+      "file": "Singularity/WalkTransport.lean",
+      "sha256": "f5a9e8f62b253c54c4af510006be2aec786b17e129a9220ced3cff84fe0bf217",
+      "imports": [
+        "Singularity.InfiniteWalkProcess"
+      ]
+    },
+    {
+      "module": "Singularity.WeightedCauchySchwarz",
+      "file": "Singularity/WeightedCauchySchwarz.lean",
+      "sha256": "763cfc9cafd755ebda32a6e7f20e660d516bab85570fab1259e89f47a43bd615",
+      "imports": [
+        "Mathlib.MeasureTheory.Function.L2Space",
+        "Mathlib.MeasureTheory.Function.SpecialFunctions.Basic",
+        "Mathlib.Tactic.Linarith",
+        "Mathlib.Tactic.Ring"
+      ]
+    },
+    {
+      "module": "Singularity.WeightedCurrent",
+      "file": "Singularity/WeightedCurrent.lean",
+      "sha256": "b2b09a28014f788b37d1c614ae745708a2322e87ece83501b9f231618eb1b3d4",
+      "imports": [
+        "Mathlib.MeasureTheory.Measure.WithDensity",
+        "Mathlib.MeasureTheory.Integral.Lebesgue.Map"
+      ]
+    },
+    {
+      "module": "Singularity.WeightedOccupation",
+      "file": "Singularity/WeightedOccupation.lean",
+      "sha256": "ba8779770053514fee4a008cf716f16821dc29bd6e6dc9b0d8f5d50111c1b247",
+      "imports": [
+        "Singularity.InfiniteWalkProcess",
+        "Singularity.GreenAdjoint",
+        "Singularity.CountingSequence",
+        "Mathlib.MeasureTheory.Integral.Lebesgue.Countable"
+      ]
+    }
+  ]
+}
